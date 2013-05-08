@@ -71,13 +71,24 @@
     if (button != nil) {
         //editing mode enable
         if (tableView.editing == NO) {
-            [tableView setEditing:YES];
+            [tableView setEditing:YES animated:YES];
         }
         else {
             //editing disable
-            [tableView setEditing:NO];
+            [tableView setEditing:NO animated:YES];
         }
-    
+    }
+}
+
+//commit edit (delete)
+- (void)tableView:(UITableView *)tableView2 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    //remove object from array if "delete" is the editing style
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [groceryArray removeObjectAtIndex:indexPath.row];
+        
+        //remove from tableview as well
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
     }
 }
 
