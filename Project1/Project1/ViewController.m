@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomTableCell.h"
 
 @interface ViewController ()
 
@@ -35,18 +36,25 @@
 }
 
 //load array into reusable cells
-- (UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CustomTableCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+       
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"customCellView" owner:nil options:nil];
+        for (UIView *view in views) {
+            if ([view isKindOfClass:[CustomTableCell class]]) {
+                
+                cell = (CustomTableCell*)view;
+                cell.textLabel.text =  [groceryArray objectAtIndex:indexPath.row];
+            }
+        }
     }
     
     static int count = 0;
-    cell.textLabel.text = (NSString*)[groceryArray objectAtIndex:indexPath.row];
     
     count ++;
     return cell;
@@ -69,8 +77,8 @@
 {
     UIButton *button = [UIButton alloc];
     if (button != nil) {
-        //editing mode enable
         if (tableView.editing == NO) {
+            //editing mode enable
             [tableView setEditing:YES animated:YES];
         }
         else {
