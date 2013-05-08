@@ -14,4 +14,6 @@
     NSMutableArray *groceryArray;
 }
 
+-(IBAction)onClick:(id)sender;
+
 @end

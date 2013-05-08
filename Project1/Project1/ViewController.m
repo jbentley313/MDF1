@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     groceryArray = [[NSMutableArray alloc]initWithObjects:@"Milk",@"eggs", @"butter", @"Capri Sun", @"Turkey", @"Tuna", @"Mac & Cheese", @"Soy Milk", @"Chicken Tenders", @"Chicken Pattys", @"Pop Tarts", @"Peanut Butter", @"Flour", @"Tortillas", @"Beans", @"Sour Cream", @"Shredded Cheese", @"Chips", @"Monster Energy Drink", @"Yogurt", @"bagels", @"bread",  nil];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -27,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//count items in array
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return groceryArray.count;
@@ -54,6 +56,29 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+//table cell editing style
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+//edit button
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = [UIButton alloc];
+    if (button != nil) {
+        //editing mode enable
+        if (tableView.editing == NO) {
+            [tableView setEditing:YES];
+        }
+        else {
+            //editing disable
+            [tableView setEditing:NO];
+        }
+    
+    }
 }
 
 @end
