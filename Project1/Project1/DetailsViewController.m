@@ -7,6 +7,7 @@
 //
 
 #import "DetailsViewController.h"
+#import "ViewController.h"
 
 @interface DetailsViewController ()
 
@@ -48,7 +49,9 @@
         tempLabel.text = self.groceryInfo.groceryTemp;
         NecLabel.text = self.groceryInfo.groceryNecessary;
     }
-   
+  
+    [super viewDidAppear:animated];
+    
 }
 
 @end

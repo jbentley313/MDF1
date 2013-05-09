@@ -10,15 +10,15 @@
 		BB4F6688173B241600DC0079 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F6687173B241600DC0079 /* DetailsView.xib */; };
 		BB4F668E173B313200DC0079 /* GroceryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F668D173B313200DC0079 /* GroceryInfo.m */; };
 		BB4F6691173B4C6F00DC0079 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */; };
+		BB739BCE173C3FBE0086F65B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB739BCB173C3FBE0086F65B /* Default-568h@2x.png */; };
+		BB739BCF173C3FBE0086F65B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB739BCC173C3FBE0086F65B /* Default.png */; };
+		BB739BD0173C3FBE0086F65B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB739BCD173C3FBE0086F65B /* Default@2x.png */; };
 		BB797A631739AC01006B2148 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A621739AC01006B2148 /* UIKit.framework */; };
 		BB797A651739AC01006B2148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A641739AC01006B2148 /* Foundation.framework */; };
 		BB797A671739AC01006B2148 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A661739AC01006B2148 /* CoreGraphics.framework */; };
 		BB797A6D1739AC01006B2148 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB797A6B1739AC01006B2148 /* InfoPlist.strings */; };
 		BB797A6F1739AC01006B2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB797A6E1739AC01006B2148 /* main.m */; };
 		BB797A731739AC01006B2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB797A721739AC01006B2148 /* AppDelegate.m */; };
-		BB797A751739AC01006B2148 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB797A741739AC01006B2148 /* Default.png */; };
-		BB797A771739AC01006B2148 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB797A761739AC01006B2148 /* Default@2x.png */; };
-		BB797A791739AC01006B2148 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB797A781739AC01006B2148 /* Default-568h@2x.png */; };
 		BB797A7C1739AC01006B2148 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB797A7B1739AC01006B2148 /* ViewController.m */; };
 		BB797A7F1739AC01006B2148 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB797A7D1739AC01006B2148 /* ViewController_iPhone.xib */; };
 		BB797A821739AC01006B2148 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB797A801739AC01006B2148 /* ViewController_iPad.xib */; };
@@ -33,6 +33,9 @@
 		BB4F668D173B313200DC0079 /* GroceryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroceryInfo.m; path = ../GroceryInfo.m; sourceTree = "<group>"; };
 		BB4F668F173B4C6F00DC0079 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		BB739BCB173C3FBE0086F65B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BB739BCC173C3FBE0086F65B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BB739BCD173C3FBE0086F65B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BB797A5F1739AC01006B2148 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB797A621739AC01006B2148 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB797A641739AC01006B2148 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,9 +46,6 @@
 		BB797A701739AC01006B2148 /* Project1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project1-Prefix.pch"; sourceTree = "<group>"; };
 		BB797A711739AC01006B2148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB797A721739AC01006B2148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB797A741739AC01006B2148 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BB797A761739AC01006B2148 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BB797A781739AC01006B2148 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BB797A7A1739AC01006B2148 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB797A7B1739AC01006B2148 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB797A7E1739AC01006B2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -100,6 +100,9 @@
 		BB797A681739AC01006B2148 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				BB739BCB173C3FBE0086F65B /* Default-568h@2x.png */,
+				BB739BCC173C3FBE0086F65B /* Default.png */,
+				BB739BCD173C3FBE0086F65B /* Default@2x.png */,
 				BB4F668C173B313200DC0079 /* GroceryInfo.h */,
 				BB4F668D173B313200DC0079 /* GroceryInfo.m */,
 				BB797A711739AC01006B2148 /* AppDelegate.h */,
@@ -127,9 +130,6 @@
 				BB797A6B1739AC01006B2148 /* InfoPlist.strings */,
 				BB797A6E1739AC01006B2148 /* main.m */,
 				BB797A701739AC01006B2148 /* Project1-Prefix.pch */,
-				BB797A741739AC01006B2148 /* Default.png */,
-				BB797A761739AC01006B2148 /* Default@2x.png */,
-				BB797A781739AC01006B2148 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -186,14 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB797A6D1739AC01006B2148 /* InfoPlist.strings in Resources */,
-				BB797A751739AC01006B2148 /* Default.png in Resources */,
-				BB797A771739AC01006B2148 /* Default@2x.png in Resources */,
-				BB797A791739AC01006B2148 /* Default-568h@2x.png in Resources */,
 				BB797A7F1739AC01006B2148 /* ViewController_iPhone.xib in Resources */,
 				BB797A821739AC01006B2148 /* ViewController_iPad.xib in Resources */,
 				BB940158173A1A0F00F014AB /* customCellView.xib in Resources */,
 				BB94015A173A1D5300F014AB /* 1368009720_bag.png in Resources */,
 				BB4F6688173B241600DC0079 /* DetailsView.xib in Resources */,
+				BB739BCE173C3FBE0086F65B /* Default-568h@2x.png in Resources */,
+				BB739BCF173C3FBE0086F65B /* Default.png in Resources */,
+				BB739BD0173C3FBE0086F65B /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +308,7 @@
 				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
 				INFOPLIST_FILE = "Project1/Project1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -319,6 +320,7 @@
 				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
 				INFOPLIST_FILE = "Project1/Project1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
