@@ -24,7 +24,6 @@
 		BB797A731739AC01006B2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB797A721739AC01006B2148 /* AppDelegate.m */; };
 		BB797A7C1739AC01006B2148 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB797A7B1739AC01006B2148 /* ViewController.m */; };
 		BB797A7F1739AC01006B2148 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB797A7D1739AC01006B2148 /* ViewController_iPhone.xib */; };
-		BB797A821739AC01006B2148 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB797A801739AC01006B2148 /* ViewController_iPad.xib */; };
 		BB940158173A1A0F00F014AB /* customCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB940157173A1A0F00F014AB /* customCellView.xib */; };
 		BB94015D173A1E1F00F014AB /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94015C173A1E1F00F014AB /* CustomTableCell.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,7 @@
 		BB739BD6173C4E1F0086F65B /* GroceryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryInfo.m; sourceTree = "<group>"; };
 		BB739BE6173C57550086F65B /* gro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gro.png; sourceTree = "<group>"; };
 		BB739BE8173C577C0086F65B /* grosmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grosmall.png; sourceTree = "<group>"; };
-		BB797A5F1739AC01006B2148 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB797A5F1739AC01006B2148 /* Grocery List!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery List!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB797A621739AC01006B2148 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB797A641739AC01006B2148 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB797A661739AC01006B2148 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +53,6 @@
 		BB797A7A1739AC01006B2148 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB797A7B1739AC01006B2148 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB797A7E1739AC01006B2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		BB797A811739AC01006B2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		BB940157173A1A0F00F014AB /* customCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCellView.xib; sourceTree = "<group>"; };
 		BB94015B173A1E1F00F014AB /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		BB94015C173A1E1F00F014AB /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
@@ -86,7 +84,7 @@
 		BB797A601739AC01006B2148 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB797A5F1739AC01006B2148 /* Project1.app */,
+				BB797A5F1739AC01006B2148 /* Grocery List!.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +118,6 @@
 				BB4F668F173B4C6F00DC0079 /* DetailsViewController.h */,
 				BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */,
 				BB797A7D1739AC01006B2148 /* ViewController_iPhone.xib */,
-				BB797A801739AC01006B2148 /* ViewController_iPad.xib */,
 				BB797A691739AC01006B2148 /* Supporting Files */,
 				BB940157173A1A0F00F014AB /* customCellView.xib */,
 				BB94015B173A1E1F00F014AB /* CustomTableCell.h */,
@@ -157,7 +154,7 @@
 			);
 			name = "Grocery List!";
 			productName = Project1;
-			productReference = BB797A5F1739AC01006B2148 /* Project1.app */;
+			productReference = BB797A5F1739AC01006B2148 /* Grocery List!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +190,6 @@
 			files = (
 				BB797A6D1739AC01006B2148 /* InfoPlist.strings in Resources */,
 				BB797A7F1739AC01006B2148 /* ViewController_iPhone.xib in Resources */,
-				BB797A821739AC01006B2148 /* ViewController_iPad.xib in Resources */,
 				BB940158173A1A0F00F014AB /* customCellView.xib in Resources */,
 				BB4F6688173B241600DC0079 /* DetailsView.xib in Resources */,
 				BB739BCE173C3FBE0086F65B /* Default-568h@2x.png in Resources */,
@@ -238,14 +234,6 @@
 				BB797A7E1739AC01006B2148 /* en */,
 			);
 			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		BB797A801739AC01006B2148 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB797A811739AC01006B2148 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +305,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
 				INFOPLIST_FILE = "Project1/Project1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -329,6 +318,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
 				INFOPLIST_FILE = "Project1/Project1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
