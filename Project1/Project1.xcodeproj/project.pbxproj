@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4F6688173B241600DC0079 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F6687173B241600DC0079 /* DetailsView.xib */; };
+		BB4F668E173B313200DC0079 /* GroceryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F668D173B313200DC0079 /* GroceryInfo.m */; };
+		BB4F6691173B4C6F00DC0079 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */; };
 		BB797A631739AC01006B2148 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A621739AC01006B2148 /* UIKit.framework */; };
 		BB797A651739AC01006B2148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A641739AC01006B2148 /* Foundation.framework */; };
 		BB797A671739AC01006B2148 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB797A661739AC01006B2148 /* CoreGraphics.framework */; };
@@ -25,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB4F6687173B241600DC0079 /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
+		BB4F668C173B313200DC0079 /* GroceryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroceryInfo.h; path = ../GroceryInfo.h; sourceTree = "<group>"; };
+		BB4F668D173B313200DC0079 /* GroceryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroceryInfo.m; path = ../GroceryInfo.m; sourceTree = "<group>"; };
+		BB4F668F173B4C6F00DC0079 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		BB797A5F1739AC01006B2148 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB797A621739AC01006B2148 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB797A641739AC01006B2148 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,10 +100,15 @@
 		BB797A681739AC01006B2148 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				BB4F668C173B313200DC0079 /* GroceryInfo.h */,
+				BB4F668D173B313200DC0079 /* GroceryInfo.m */,
 				BB797A711739AC01006B2148 /* AppDelegate.h */,
 				BB797A721739AC01006B2148 /* AppDelegate.m */,
 				BB797A7A1739AC01006B2148 /* ViewController.h */,
 				BB797A7B1739AC01006B2148 /* ViewController.m */,
+				BB4F6687173B241600DC0079 /* DetailsView.xib */,
+				BB4F668F173B4C6F00DC0079 /* DetailsViewController.h */,
+				BB4F6690173B4C6F00DC0079 /* DetailsViewController.m */,
 				BB797A7D1739AC01006B2148 /* ViewController_iPhone.xib */,
 				BB797A801739AC01006B2148 /* ViewController_iPad.xib */,
 				BB797A691739AC01006B2148 /* Supporting Files */,
@@ -180,6 +193,7 @@
 				BB797A821739AC01006B2148 /* ViewController_iPad.xib in Resources */,
 				BB940158173A1A0F00F014AB /* customCellView.xib in Resources */,
 				BB94015A173A1D5300F014AB /* 1368009720_bag.png in Resources */,
+				BB4F6688173B241600DC0079 /* DetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +208,8 @@
 				BB797A731739AC01006B2148 /* AppDelegate.m in Sources */,
 				BB797A7C1739AC01006B2148 /* ViewController.m in Sources */,
 				BB94015D173A1E1F00F014AB /* CustomTableCell.m in Sources */,
+				BB4F668E173B313200DC0079 /* GroceryInfo.m in Sources */,
+				BB4F6691173B4C6F00DC0079 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
