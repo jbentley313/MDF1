@@ -41,14 +41,14 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)viewDidAppear:(BOOL)animated
 {
     if (self.groceryInfo != nil) {
         nameLabel.text = self.groceryInfo.groceryName;
         tempLabel.text = self.groceryInfo.groceryTemp;
         NecLabel.text = self.groceryInfo.groceryNecessary;
     }
-    [super viewWillAppear];
+   
 }
 
 @end
