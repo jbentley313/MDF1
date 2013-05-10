@@ -152,7 +152,9 @@
         
         //remove from tableview as well
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+        
     }
 }
+
 
 @end

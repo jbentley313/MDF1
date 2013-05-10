@@ -12,7 +12,7 @@
 {
     IBOutlet UITableView *tableView;
     NSMutableArray *groceryArray;
-    IBOutlet UILabel *head;
+   
 }
 
 -(IBAction)onClick:(id)sender;
