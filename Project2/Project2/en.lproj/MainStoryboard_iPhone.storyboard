@@ -36,7 +36,7 @@
                             <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="First" image="first.png" id="7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,13 +88,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-dl-1iQ">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-dl-1iQ">
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="FJg-gd-KNe"/>
+                                    <constraint firstAttribute="width" constant="147" id="Yf5-jM-B11"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the third view controller — an instance of ThirdViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="This app was made by: Jason Bentley" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="lQE-uV-h7o"/>
                                 </constraints>
@@ -103,8 +107,8 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uis-rb-lrV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Go somewhere else">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="about Jason Bentley">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -116,8 +120,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-AY-VqZ">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="and somewhere else">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="about this app">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -128,25 +132,24 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eJY-dl-1iQ" firstAttribute="leading" secondItem="CZn-Zb-KnI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5WW-16-RhF"/>
-                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="52" id="EXC-Nr-7dB"/>
+                            <constraint firstItem="eJY-dl-1iQ" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="Hbi-pA-CZQ"/>
+                            <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerX" secondItem="uis-rb-lrV" secondAttribute="centerX" type="default" id="HmD-IC-v3b"/>
                             <constraint firstItem="uis-rb-lrV" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="MYI-TJ-T1V"/>
-                            <constraint firstItem="PfF-AY-VqZ" firstAttribute="leading" secondItem="uis-rb-lrV" secondAttribute="leading" type="default" id="Tx7-24-dFn"/>
                             <constraint firstAttribute="trailing" secondItem="gxH-jD-8we" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UWg-yL-0pO"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="centerY" secondItem="CZn-Zb-KnI" secondAttribute="centerY" type="default" id="XLQ-v4-PTF"/>
+                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="51" id="nTG-j5-QCN"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="top" secondItem="eJY-dl-1iQ" secondAttribute="bottom" constant="40" type="user" id="t9w-Fo-uAb"/>
+                            <constraint firstAttribute="bottom" secondItem="uis-rb-lrV" secondAttribute="bottom" constant="108" id="tB1-1P-CSy"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="leading" secondItem="CZn-Zb-KnI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wH0-L4-Ly5"/>
-                            <constraint firstAttribute="trailing" secondItem="eJY-dl-1iQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="y86-IF-11x"/>
-                            <constraint firstAttribute="bottom" secondItem="uis-rb-lrV" secondAttribute="bottom" constant="108" id="zIr-2q-odN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nav Stuff" id="MQm-pc-skF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F73-UX-ftr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="1213"/>
+            <point key="canvasLocation" x="653" y="1219"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ptv-Rd-q2p">
@@ -156,23 +159,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Yeahyerrrr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWg-03-OjG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I am a student at Full Sail University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWg-03-OjG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="UWg-03-OjG" secondAttribute="bottom" constant="203" id="I5r-06-6Gw"/>
-                            <constraint firstItem="UWg-03-OjG" firstAttribute="leading" secondItem="Wvh-TP-fHT" secondAttribute="leading" constant="129" id="mSM-YQ-Nyw"/>
+                            <constraint firstItem="UWg-03-OjG" firstAttribute="top" secondItem="Wvh-TP-fHT" secondAttribute="top" constant="197" id="iKb-bY-wZe"/>
+                            <constraint firstItem="UWg-03-OjG" firstAttribute="centerX" secondItem="Wvh-TP-fHT" secondAttribute="centerX" type="default" id="mGE-Iw-oeO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lQv-qj-ltu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNs-pr-fqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="1113"/>
+            <point key="canvasLocation" x="1276" y="1069"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ehB-Id-19x">
@@ -182,23 +185,25 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teva" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nug-Yf-ZTp">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This app was made using storyboards on Xcode.  This section is part of the UINavigationControler" translatesAutoresizingMaskIntoConstraints="NO" id="bUE-tc-Ess">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nug-Yf-ZTp" firstAttribute="leading" secondItem="Sf1-Vb-OJp" secondAttribute="leading" constant="117" id="a4b-PU-XiO"/>
-                            <constraint firstItem="nug-Yf-ZTp" firstAttribute="top" secondItem="Sf1-Vb-OJp" secondAttribute="top" constant="134" id="htI-X3-xWu"/>
+                            <constraint firstAttribute="bottom" secondItem="bUE-tc-Ess" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="EFC-Ac-UHq"/>
+                            <constraint firstAttribute="trailing" secondItem="bUE-tc-Ess" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ics-2H-YRV"/>
+                            <constraint firstItem="bUE-tc-Ess" firstAttribute="leading" secondItem="Sf1-Vb-OJp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="POs-Ou-d6h"/>
+                            <constraint firstItem="bUE-tc-Ess" firstAttribute="top" secondItem="Sf1-Vb-OJp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Qka-Cc-UOE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XEr-V4-G86"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtg-CE-iAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="1804"/>
+            <point key="canvasLocation" x="1276" y="1774"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -220,11 +225,11 @@
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
-        <!--Navigation Controller - Third-->
+        <!--Navigation Controller - Credits-->
         <scene sceneID="LZe-cf-Tav">
             <objects>
                 <navigationController id="iBK-As-OZS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Third" image="first" id="CT9-Wc-wBz"/>
+                    <tabBarItem key="tabBarItem" title="Credits" image="second" id="CT9-Wc-wBz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvQ-C2-TXw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -237,11 +242,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrC-tw-MOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="1278"/>
+            <point key="canvasLocation" x="217" y="1219"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
+        <image name="first.png" width="30" height="30"/>
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
