@@ -102,12 +102,6 @@
 		BB797A681739AC01006B2148 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
-				BB739BE8173C577C0086F65B /* grosmall.png */,
-				BB739BE6173C57550086F65B /* gro.png */,
-				BB739BD3173C4DA60086F65B /* 1368009720_bag.png */,
-				BB739BCB173C3FBE0086F65B /* Default-568h@2x.png */,
-				BB739BCC173C3FBE0086F65B /* Default.png */,
-				BB739BCD173C3FBE0086F65B /* Default@2x.png */,
 				BB739BD5173C4E1F0086F65B /* GroceryInfo.h */,
 				BB739BD6173C4E1F0086F65B /* GroceryInfo.m */,
 				BB797A711739AC01006B2148 /* AppDelegate.h */,
@@ -129,6 +123,12 @@
 		BB797A691739AC01006B2148 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB739BE8173C577C0086F65B /* grosmall.png */,
+				BB739BE6173C57550086F65B /* gro.png */,
+				BB739BD3173C4DA60086F65B /* 1368009720_bag.png */,
+				BB739BCB173C3FBE0086F65B /* Default-568h@2x.png */,
+				BB739BCC173C3FBE0086F65B /* Default.png */,
+				BB739BCD173C3FBE0086F65B /* Default@2x.png */,
 				BB797A6A1739AC01006B2148 /* Project1-Info.plist */,
 				BB797A6B1739AC01006B2148 /* InfoPlist.strings */,
 				BB797A6E1739AC01006B2148 /* main.m */,
