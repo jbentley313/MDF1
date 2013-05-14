@@ -24,6 +24,7 @@
 		BBD5F6C91741BABA001B1DD5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6C81741BABA001B1DD5 /* SecondViewController.m */; };
 		BBD5F6CB1741BABA001B1DD5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CA1741BABA001B1DD5 /* second.png */; };
 		BBD5F6CD1741BABA001B1DD5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CC1741BABA001B1DD5 /* second@2x.png */; };
+		BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		BBD5F6C81741BABA001B1DD5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BBD5F6CA1741BABA001B1DD5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BBD5F6CC1741BABA001B1DD5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BBD5F6D31741BF86001B1DD5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				BBD5F6CA1741BABA001B1DD5 /* second.png */,
 				BBD5F6CC1741BABA001B1DD5 /* second@2x.png */,
 				BBD5F6A91741BABA001B1DD5 /* Supporting Files */,
+				BBD5F6D31741BF86001B1DD5 /* ThirdViewController.h */,
+				BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				BBD5F6B31741BABA001B1DD5 /* AppDelegate.m in Sources */,
 				BBD5F6C21741BABA001B1DD5 /* FirstViewController.m in Sources */,
 				BBD5F6C91741BABA001B1DD5 /* SecondViewController.m in Sources */,
+				BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
