@@ -8,13 +8,16 @@
 
 #import "DataBaseViewController.h"
 #import "DatabaseInfo.h"
+#import "RobotDetailsViewController.h"
+
 
 @interface DataBaseViewController ()
+
 
 @end
 
 @implementation DataBaseViewController
-
+@synthesize robotArray;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,7 +38,7 @@
     
     DatabaseInfo *robot4 = [[DatabaseInfo alloc] initWithRobotName:@"MARVIN" info:@"gives tours around the lab where it was developed (Koch, Jung, Wettach, Nemeth and Berns 2008)."];
     
-    robotArray = [[NSArray alloc] initWithObjects: robot1, robot2, robot3, robot4, nil];
+    robotArray = [NSArray arrayWithObjects:robot1, robot2, robot3, robot4, nil];
 
     
 //    NSLog(@"%d", [robotArray count]);
@@ -67,13 +70,27 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-                    
-                
-                DatabaseInfo *info= [robotArray objectAtIndex:indexPath.row];
-                cell.textLabel.text =  info.robot;
+    DatabaseInfo *info= [robotArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text =  info.robot;
      
    
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"RobotDetailSeg"]) {
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        DatabaseInfo *robotSelected = [robotArray objectAtIndex:indexPath.row];
+        
+        RobotDetailsViewController *RobotDetails = (RobotDetailsViewController *)segue.destinationViewController;
+        
+        RobotDetails.robotObject = robotSelected;
+        
+        
+    }
 }
 
 

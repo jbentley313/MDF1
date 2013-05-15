@@ -50,16 +50,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="This app was made by: Jason Bentley" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="lQE-uV-h7o"/>
+                                    <constraint firstAttribute="height" constant="159" id="Mi2-hi-8JT"/>
                                 </constraints>
+                                <string key="text">Reference for data:                                                                      Lopes L, Belpaeme T. Beyond the individual: new insights on language, cognition and robots. Connection Science [serial online]. December 2008;20(4):231-237. Available from: Academic Search Complete, Ipswich, MA. Accessed May 15, 2013.</string>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uis-rb-lrV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="about Jason Bentley">
+                                <state key="normal" title="About Jason Bentley">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -72,7 +74,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-AY-VqZ">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="about this app">
+                                <state key="normal" title="About this app">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,11 +89,11 @@
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="29" id="Agg-8o-s7E"/>
-                            <constraint firstItem="uis-rb-lrV" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="149" id="CB1-Nn-W3U"/>
+                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="136" id="Gw6-uZ-30S"/>
                             <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerX" secondItem="uis-rb-lrV" secondAttribute="centerX" type="default" id="HmD-IC-v3b"/>
                             <constraint firstItem="uis-rb-lrV" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="MYI-TJ-T1V"/>
                             <constraint firstAttribute="trailing" secondItem="gxH-jD-8we" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UWg-yL-0pO"/>
-                            <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerY" secondItem="CZn-Zb-KnI" secondAttribute="centerY" type="default" id="Wwo-eM-fm0"/>
+                            <constraint firstItem="uis-rb-lrV" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="219" id="c6M-n5-KdT"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="leading" secondItem="CZn-Zb-KnI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wH0-L4-Ly5"/>
                         </constraints>
                     </view>
@@ -193,7 +195,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="OmD-0E-IW7" kind="push" id="hKu-je-ngJ"/>
+                                    <segue destination="OmD-0E-IW7" kind="push" identifier="RobotDetailSeg" id="hKu-je-ngJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -208,16 +210,34 @@
             </objects>
             <point key="canvasLocation" x="1105" y="615"/>
         </scene>
-        <!--View Controller-->
+        <!--Robot Details View Controller-->
         <scene sceneID="Tgr-kc-2wz">
             <objects>
-                <viewController id="OmD-0E-IW7" sceneMemberID="viewController">
+                <viewController id="OmD-0E-IW7" customClass="RobotDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwg-fa-xTN">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRW-K7-5mA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="4QH-Cb-Pe5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wRW-K7-5mA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vba-KH-fpL"/>
+                            <constraint firstItem="wRW-K7-5mA" firstAttribute="leading" secondItem="jwg-fa-xTN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ihe-Qs-DBq"/>
+                            <constraint firstItem="wRW-K7-5mA" firstAttribute="top" secondItem="jwg-fa-xTN" secondAttribute="top" constant="37" id="z1c-WI-jrc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1R-Lu-bbi"/>
+                    <connections>
+                        <outlet property="robotNameLabel" destination="wRW-K7-5mA" id="hhI-kN-cPJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2Z-VP-qdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,6 +297,13 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RobotDetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RobotDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="robotInfoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="robotNameLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="ThirdViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>

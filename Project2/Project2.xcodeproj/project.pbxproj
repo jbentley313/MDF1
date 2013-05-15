@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832317430B11009E4C04 /* DataBaseViewController.m */; };
 		BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832617430D77009E4C04 /* DatabaseInfo.m */; };
+		BB8A832A17433F0A009E4C04 /* RobotDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */; };
 		BBD5F6A31741BABA001B1DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A21741BABA001B1DD5 /* UIKit.framework */; };
 		BBD5F6A51741BABA001B1DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A41741BABA001B1DD5 /* Foundation.framework */; };
 		BBD5F6A71741BABA001B1DD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A61741BABA001B1DD5 /* CoreGraphics.framework */; };
@@ -33,6 +34,8 @@
 		BB8A832317430B11009E4C04 /* DataBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseViewController.m; sourceTree = "<group>"; };
 		BB8A832517430D77009E4C04 /* DatabaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseInfo.h; sourceTree = "<group>"; };
 		BB8A832617430D77009E4C04 /* DatabaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseInfo.m; sourceTree = "<group>"; };
+		BB8A832817433F0A009E4C04 /* RobotDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotDetailsViewController.h; sourceTree = "<group>"; };
+		BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotDetailsViewController.m; sourceTree = "<group>"; };
 		BBD5F69F1741BABA001B1DD5 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5F6A21741BABA001B1DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBD5F6A41741BABA001B1DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				BB8A832317430B11009E4C04 /* DataBaseViewController.m */,
 				BB8A832517430D77009E4C04 /* DatabaseInfo.h */,
 				BB8A832617430D77009E4C04 /* DatabaseInfo.m */,
+				BB8A832817433F0A009E4C04 /* RobotDetailsViewController.h */,
+				BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */,
 				BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */,
 				BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */,
+				BB8A832A17433F0A009E4C04 /* RobotDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

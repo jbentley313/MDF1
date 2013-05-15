@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DataBaseViewController : UITableViewController
-{
-    NSArray *robotArray;
-}
+
+    @property NSArray *robotArray;
+
 
 @end
