@@ -50,16 +50,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-dl-1iQ">
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="FJg-gd-KNe"/>
-                                    <constraint firstAttribute="width" constant="147" id="Yf5-jM-B11"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="This app was made by: Jason Bentley" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="lQE-uV-h7o"/>
@@ -96,18 +86,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eJY-dl-1iQ" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="Hbi-pA-CZQ"/>
+                            <constraint firstItem="gxH-jD-8we" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="29" id="Agg-8o-s7E"/>
+                            <constraint firstItem="uis-rb-lrV" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="149" id="CB1-Nn-W3U"/>
                             <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerX" secondItem="uis-rb-lrV" secondAttribute="centerX" type="default" id="HmD-IC-v3b"/>
                             <constraint firstItem="uis-rb-lrV" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="MYI-TJ-T1V"/>
                             <constraint firstAttribute="trailing" secondItem="gxH-jD-8we" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UWg-yL-0pO"/>
-                            <constraint firstItem="gxH-jD-8we" firstAttribute="centerY" secondItem="CZn-Zb-KnI" secondAttribute="centerY" type="default" id="XLQ-v4-PTF"/>
-                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="51" id="nTG-j5-QCN"/>
-                            <constraint firstItem="gxH-jD-8we" firstAttribute="top" secondItem="eJY-dl-1iQ" secondAttribute="bottom" constant="40" type="user" id="t9w-Fo-uAb"/>
-                            <constraint firstAttribute="bottom" secondItem="uis-rb-lrV" secondAttribute="bottom" constant="108" id="tB1-1P-CSy"/>
+                            <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerY" secondItem="CZn-Zb-KnI" secondAttribute="centerY" type="default" id="Wwo-eM-fm0"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="leading" secondItem="CZn-Zb-KnI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wH0-L4-Ly5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nav Stuff" id="MQm-pc-skF"/>
+                    <navigationItem key="navigationItem" title="Credits" id="MQm-pc-skF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F73-UX-ftr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,18 +175,18 @@
             </objects>
             <point key="canvasLocation" x="12" y="160"/>
         </scene>
-        <!--Table View Controller - Item-->
+        <!--Data Base View Controller - fsoTable-->
         <scene sceneID="BCq-u4-b6Y">
             <objects>
-                <tableViewController id="2QD-aD-U4X" sceneMemberID="viewController">
+                <tableViewController title="fsoTable" id="2QD-aD-U4X" customClass="DataBaseViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="whR-CK-6TE">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="iaF-7a-bbA">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="haN-zU-h9b">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -211,7 +199,7 @@
                             <outlet property="delegate" destination="2QD-aD-U4X" id="46a-Ka-4So"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="first.png" id="gbx-kb-syS"/>
+                    <tabBarItem key="tabBarItem" title="Database " image="first.png" id="gbx-kb-syS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n66-3h-J7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +214,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvQ-C2-TXw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -242,6 +231,9 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="DataBaseViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DataBaseViewController.h"/>
+        </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
         </class>

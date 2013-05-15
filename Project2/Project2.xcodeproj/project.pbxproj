@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832317430B11009E4C04 /* DataBaseViewController.m */; };
+		BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832617430D77009E4C04 /* DatabaseInfo.m */; };
 		BBD5F6A31741BABA001B1DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A21741BABA001B1DD5 /* UIKit.framework */; };
 		BBD5F6A51741BABA001B1DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A41741BABA001B1DD5 /* Foundation.framework */; };
 		BBD5F6A71741BABA001B1DD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A61741BABA001B1DD5 /* CoreGraphics.framework */; };
@@ -21,13 +23,16 @@
 		BBD5F6C21741BABA001B1DD5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6C11741BABA001B1DD5 /* FirstViewController.m */; };
 		BBD5F6C41741BABA001B1DD5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6C31741BABA001B1DD5 /* first.png */; };
 		BBD5F6C61741BABA001B1DD5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6C51741BABA001B1DD5 /* first@2x.png */; };
-		BBD5F6C91741BABA001B1DD5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6C81741BABA001B1DD5 /* SecondViewController.m */; };
 		BBD5F6CB1741BABA001B1DD5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CA1741BABA001B1DD5 /* second.png */; };
 		BBD5F6CD1741BABA001B1DD5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CC1741BABA001B1DD5 /* second@2x.png */; };
 		BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8A832217430B11009E4C04 /* DataBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseViewController.h; sourceTree = "<group>"; };
+		BB8A832317430B11009E4C04 /* DataBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseViewController.m; sourceTree = "<group>"; };
+		BB8A832517430D77009E4C04 /* DatabaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseInfo.h; sourceTree = "<group>"; };
+		BB8A832617430D77009E4C04 /* DatabaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseInfo.m; sourceTree = "<group>"; };
 		BBD5F69F1741BABA001B1DD5 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5F6A21741BABA001B1DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBD5F6A41741BABA001B1DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,8 +52,6 @@
 		BBD5F6C11741BABA001B1DD5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BBD5F6C31741BABA001B1DD5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BBD5F6C51741BABA001B1DD5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BBD5F6C71741BABA001B1DD5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BBD5F6C81741BABA001B1DD5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BBD5F6CA1741BABA001B1DD5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BBD5F6CC1741BABA001B1DD5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BBD5F6D31741BF86001B1DD5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -107,13 +110,15 @@
 				BBD5F6C11741BABA001B1DD5 /* FirstViewController.m */,
 				BBD5F6C31741BABA001B1DD5 /* first.png */,
 				BBD5F6C51741BABA001B1DD5 /* first@2x.png */,
-				BBD5F6C71741BABA001B1DD5 /* SecondViewController.h */,
-				BBD5F6C81741BABA001B1DD5 /* SecondViewController.m */,
 				BBD5F6CA1741BABA001B1DD5 /* second.png */,
 				BBD5F6CC1741BABA001B1DD5 /* second@2x.png */,
 				BBD5F6A91741BABA001B1DD5 /* Supporting Files */,
 				BBD5F6D31741BF86001B1DD5 /* ThirdViewController.h */,
 				BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */,
+				BB8A832217430B11009E4C04 /* DataBaseViewController.h */,
+				BB8A832317430B11009E4C04 /* DataBaseViewController.m */,
+				BB8A832517430D77009E4C04 /* DatabaseInfo.h */,
+				BB8A832617430D77009E4C04 /* DatabaseInfo.m */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -206,8 +211,9 @@
 				BBD5F6AF1741BABA001B1DD5 /* main.m in Sources */,
 				BBD5F6B31741BABA001B1DD5 /* AppDelegate.m in Sources */,
 				BBD5F6C21741BABA001B1DD5 /* FirstViewController.m in Sources */,
-				BBD5F6C91741BABA001B1DD5 /* SecondViewController.m in Sources */,
 				BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */,
+				BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */,
+				BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 				BBD5F6D21741BABA001B1DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
