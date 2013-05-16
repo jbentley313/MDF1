@@ -39,7 +39,7 @@
 		BB8A832617430D77009E4C04 /* DatabaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseInfo.m; sourceTree = "<group>"; };
 		BB8A832817433F0A009E4C04 /* RobotDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotDetailsViewController.h; sourceTree = "<group>"; };
 		BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotDetailsViewController.m; sourceTree = "<group>"; };
-		BBD5F69F1741BABA001B1DD5 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD5F69F1741BABA001B1DD5 /* Project 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5F6A21741BABA001B1DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBD5F6A41741BABA001B1DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBD5F6A61741BABA001B1DD5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,7 +99,7 @@
 		BBD5F6A01741BABA001B1DD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBD5F69F1741BABA001B1DD5 /* Project2.app */,
+				BBD5F69F1741BABA001B1DD5 /* Project 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			);
 			name = "Project 2";
 			productName = Project2;
-			productReference = BBD5F69F1741BABA001B1DD5 /* Project2.app */;
+			productReference = BBD5F69F1741BABA001B1DD5 /* Project 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +331,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project2/Project2-Prefix.pch";
 				INFOPLIST_FILE = "Project2/Project2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -342,7 +344,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project2/Project2-Prefix.pch";
 				INFOPLIST_FILE = "Project2/Project2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
