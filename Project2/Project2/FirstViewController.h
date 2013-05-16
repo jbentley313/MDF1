@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppOwner.h"
 
 @interface FirstViewController : UIViewController
+
+@property IBOutlet UILabel *AppOwnerName;
+@property IBOutlet UILabel *AppOwnerAge;
+
+@property(strong)AppOwner *AppOwnerObject;
 
 @end

@@ -27,6 +27,7 @@
 		BBD5F6CB1741BABA001B1DD5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CA1741BABA001B1DD5 /* second.png */; };
 		BBD5F6CD1741BABA001B1DD5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBD5F6CC1741BABA001B1DD5 /* second@2x.png */; };
 		BBD5F6D51741BF86001B1DD5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */; };
+		BBF9D1C9174456B3008CE8AA /* AppOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF9D1C8174456B3008CE8AA /* AppOwner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		BBD5F6CC1741BABA001B1DD5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BBD5F6D31741BF86001B1DD5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		BBD5F6D41741BF86001B1DD5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BBF9D1C7174456B3008CE8AA /* AppOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppOwner.h; sourceTree = "<group>"; };
+		BBF9D1C8174456B3008CE8AA /* AppOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppOwner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				BB8A832617430D77009E4C04 /* DatabaseInfo.m */,
 				BB8A832817433F0A009E4C04 /* RobotDetailsViewController.h */,
 				BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */,
+				BBF9D1C7174456B3008CE8AA /* AppOwner.h */,
+				BBF9D1C8174456B3008CE8AA /* AppOwner.m */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */,
 				BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */,
 				BB8A832A17433F0A009E4C04 /* RobotDetailsViewController.m in Sources */,
+				BBF9D1C9174456B3008CE8AA /* AppOwner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

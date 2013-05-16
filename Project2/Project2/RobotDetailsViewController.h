@@ -12,7 +12,7 @@
 @interface RobotDetailsViewController : UIViewController
 
     @property(weak)IBOutlet UILabel *robotNameLabel;
-    @property(weak)IBOutlet UILabel *robotInfoLabel;
+    @property(weak)IBOutlet UITextView *robotInfoLabel;
 
 @property(strong) DatabaseInfo *robotObject;
 

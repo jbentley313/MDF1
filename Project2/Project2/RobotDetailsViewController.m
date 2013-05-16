@@ -15,7 +15,7 @@
 @end
 
 @implementation RobotDetailsViewController
-@synthesize robotNameLabel, robotInfoLabel;
+@synthesize robotNameLabel, robotInfoLabel, robotObject;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     robotNameLabel.text = self.robotObject.robot;
+    robotInfoLabel.text = self.robotObject.robotInfo;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

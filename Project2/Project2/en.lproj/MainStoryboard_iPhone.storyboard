@@ -12,31 +12,59 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Project 2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="App Owner:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrX-Df-hxa">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="Ikv-jk-tyi"/>
+                                    <constraint firstAttribute="width" constant="99" id="Eak-dO-gmO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Age:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-8x-6S9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="EqX-C1-7Ji"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-3G-ytb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-5G-gHb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QBg-X6-fBV"/>
+                            <constraint firstItem="SqJ-3G-ytb" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="125" id="8LY-71-ptC"/>
+                            <constraint firstItem="zrX-Df-hxa" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BzX-se-cZD"/>
+                            <constraint firstItem="SqJ-3G-ytb" firstAttribute="baseline" secondItem="zrX-Df-hxa" secondAttribute="baseline" type="default" id="LhD-ri-kdE"/>
+                            <constraint firstItem="m1d-5G-gHb" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="66" id="OBG-An-Cgx"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
-                            <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zmm-k2-2L7"/>
-                            <constraint firstItem="21" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="40" type="user" id="jX0-Wi-kmb"/>
-                            <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
+                            <constraint firstAttribute="bottom" secondItem="L5v-8x-6S9" secondAttribute="bottom" constant="210" id="WYp-Ca-RJX"/>
+                            <constraint firstItem="m1d-5G-gHb" firstAttribute="baseline" secondItem="L5v-8x-6S9" secondAttribute="baseline" type="default" id="X1L-kv-VNR"/>
+                            <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="123" id="cbl-9n-EAu"/>
+                            <constraint firstItem="L5v-8x-6S9" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nND-Zi-6hv"/>
+                            <constraint firstItem="zrX-Df-hxa" firstAttribute="top" secondItem="16" secondAttribute="top" constant="211" id="sCg-Pe-hc7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first.png" id="7"/>
+                    <connections>
+                        <outlet property="AppOwnerAge" destination="m1d-5G-gHb" id="BVj-iU-217"/>
+                        <outlet property="AppOwnerName" destination="SqJ-3G-ytb" id="xua-HD-pyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,9 +81,14 @@
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-jD-8we">
                                 <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="159" id="Mi2-hi-8JT"/>
+                                    <constraint firstAttribute="height" constant="298" id="pD8-1y-w1v"/>
                                 </constraints>
-                                <string key="text">Reference for data:                                                                      Lopes L, Belpaeme T. Beyond the individual: new insights on language, cognition and robots. Connection Science [serial online]. December 2008;20(4):231-237. Available from: Academic Search Complete, Ipswich, MA. Accessed May 15, 2013.</string>
+                                <string key="text">Reference for data: 
+                                                                     Lopes L, Belpaeme T. Beyond the individual: new insights on language, cognition and robots. Connection Science [serial online]. December 2008;20(4):231-237. Available from: Academic Search Complete, Ipswich, MA. Accessed May 15, 2013.
+
+Link:
+
+http://web.ebscohost.com/ehost/pdfviewer/pdfviewer?sid=f749f99c-b420-41b9-8d41-9faaaee4cf95%40sessionmgr13&amp;vid=4&amp;hid=12</string>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -88,12 +121,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="4FT-C3-qkZ"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="29" id="Agg-8o-s7E"/>
-                            <constraint firstAttribute="bottom" secondItem="PfF-AY-VqZ" secondAttribute="bottom" constant="136" id="Gw6-uZ-30S"/>
                             <constraint firstItem="PfF-AY-VqZ" firstAttribute="centerX" secondItem="uis-rb-lrV" secondAttribute="centerX" type="default" id="HmD-IC-v3b"/>
                             <constraint firstItem="uis-rb-lrV" firstAttribute="centerX" secondItem="gxH-jD-8we" secondAttribute="centerX" type="default" id="MYI-TJ-T1V"/>
                             <constraint firstAttribute="trailing" secondItem="gxH-jD-8we" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UWg-yL-0pO"/>
-                            <constraint firstItem="uis-rb-lrV" firstAttribute="top" secondItem="CZn-Zb-KnI" secondAttribute="top" constant="219" id="c6M-n5-KdT"/>
+                            <constraint firstItem="uis-rb-lrV" firstAttribute="top" secondItem="gxH-jD-8we" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="u6d-du-VH6"/>
                             <constraint firstItem="gxH-jD-8we" firstAttribute="leading" secondItem="CZn-Zb-KnI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wH0-L4-Ly5"/>
                         </constraints>
                     </view>
@@ -222,20 +255,32 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="4QH-Cb-Pe5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-il-95V">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="XoF-UL-9zS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="9pE-il-95V" firstAttribute="top" secondItem="jwg-fa-xTN" secondAttribute="top" constant="105" id="DrK-wL-WN5"/>
                             <constraint firstAttribute="trailing" secondItem="wRW-K7-5mA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vba-KH-fpL"/>
                             <constraint firstItem="wRW-K7-5mA" firstAttribute="leading" secondItem="jwg-fa-xTN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ihe-Qs-DBq"/>
+                            <constraint firstItem="9pE-il-95V" firstAttribute="leading" secondItem="jwg-fa-xTN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sMg-QC-5yv"/>
+                            <constraint firstAttribute="trailing" secondItem="9pE-il-95V" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="v3w-w3-kBb"/>
                             <constraint firstItem="wRW-K7-5mA" firstAttribute="top" secondItem="jwg-fa-xTN" secondAttribute="top" constant="37" id="z1c-WI-jrc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1R-Lu-bbi"/>
                     <connections>
+                        <outlet property="robotInfoLabel" destination="9pE-il-95V" id="sxF-Km-ePg"/>
                         <outlet property="robotNameLabel" destination="wRW-K7-5mA" id="hhI-kN-cPJ"/>
                     </connections>
                 </viewController>
@@ -294,6 +339,10 @@
         </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AppOwnerAge" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="AppOwnerName" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
@@ -301,7 +350,7 @@
         <class className="RobotDetailsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RobotDetailsViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="robotInfoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="robotInfoLabel" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="robotNameLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
