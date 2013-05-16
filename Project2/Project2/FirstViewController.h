@@ -16,4 +16,6 @@
 
 @property(strong)AppOwner *AppOwnerObject;
 
+@property NSArray *AppOwnerArray;
+
 @end

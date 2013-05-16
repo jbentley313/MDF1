@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad
 {
+    //set labels with passed info from robot object
     robotNameLabel.text = self.robotObject.robot;
     robotInfoLabel.text = self.robotObject.robotInfo;
     

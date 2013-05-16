@@ -13,9 +13,18 @@
 @end
 
 @implementation FirstViewController
+@synthesize AppOwnerArray, AppOwnerAge, AppOwnerName;
 
 - (void)viewDidLoad
 {
+    AppOwner *owner1 = [[AppOwner alloc] initWithUserName:@"Jason" age:@"34"];
+    
+    AppOwnerArray = [NSArray arrayWithObject:owner1];
+    
+    //set label to owner object text
+    AppOwnerName.text = owner1.userName;
+    AppOwnerAge.text = owner1.userAge;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
