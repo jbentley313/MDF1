@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB7D6D0117456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7D6D0017456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png */; };
 		BB8A832417430B11009E4C04 /* DataBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832317430B11009E4C04 /* DataBaseViewController.m */; };
 		BB8A832717430D77009E4C04 /* DatabaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832617430D77009E4C04 /* DatabaseInfo.m */; };
 		BB8A832A17433F0A009E4C04 /* RobotDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */; };
+		BBA59A9017457F590025E68E /* ipadiconsmall1.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA59A8F17457F590025E68E /* ipadiconsmall1.png */; };
+		BBA59A9217457F660025E68E /* ipadiconlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA59A9117457F660025E68E /* ipadiconlarge.png */; };
 		BBD5F6A31741BABA001B1DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A21741BABA001B1DD5 /* UIKit.framework */; };
 		BBD5F6A51741BABA001B1DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A41741BABA001B1DD5 /* Foundation.framework */; };
 		BBD5F6A71741BABA001B1DD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD5F6A61741BABA001B1DD5 /* CoreGraphics.framework */; };
@@ -33,12 +36,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB7D6D0017456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-05-16 at 12.24.13 PM.png"; sourceTree = "<group>"; };
 		BB8A832217430B11009E4C04 /* DataBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseViewController.h; sourceTree = "<group>"; };
 		BB8A832317430B11009E4C04 /* DataBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseViewController.m; sourceTree = "<group>"; };
 		BB8A832517430D77009E4C04 /* DatabaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseInfo.h; sourceTree = "<group>"; };
 		BB8A832617430D77009E4C04 /* DatabaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseInfo.m; sourceTree = "<group>"; };
 		BB8A832817433F0A009E4C04 /* RobotDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotDetailsViewController.h; sourceTree = "<group>"; };
 		BB8A832917433F0A009E4C04 /* RobotDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotDetailsViewController.m; sourceTree = "<group>"; };
+		BBA59A8F17457F590025E68E /* ipadiconsmall1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadiconsmall1.png; sourceTree = "<group>"; };
+		BBA59A9117457F660025E68E /* ipadiconlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadiconlarge.png; sourceTree = "<group>"; };
 		BBD5F69F1741BABA001B1DD5 /* Project 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5F6A21741BABA001B1DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBD5F6A41741BABA001B1DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +91,8 @@
 		BBD5F6961741BAB9001B1DD5 = {
 			isa = PBXGroup;
 			children = (
+				BBA59A9117457F660025E68E /* ipadiconlarge.png */,
+				BBA59A8F17457F590025E68E /* ipadiconsmall1.png */,
 				BBF9D1F617448C89008CE8AA /* p2.png */,
 				BBF9D1F717448C89008CE8AA /* p2small.png */,
 				BBF9D1EC17448BAD008CE8AA /* Default-568h@2x.png */,
@@ -120,6 +128,7 @@
 				BBD5F6B11741BABA001B1DD5 /* AppDelegate.h */,
 				BBD5F6B21741BABA001B1DD5 /* AppDelegate.m */,
 				BBD5F6BA1741BABA001B1DD5 /* MainStoryboard_iPhone.storyboard */,
+				BB7D6D0017456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png */,
 				BBD5F6BD1741BABA001B1DD5 /* MainStoryboard_iPad.storyboard */,
 				BBD5F6C01741BABA001B1DD5 /* FirstViewController.h */,
 				BBD5F6C11741BABA001B1DD5 /* FirstViewController.m */,
@@ -216,6 +225,9 @@
 				BBF9D1ED17448BAD008CE8AA /* Default-568h@2x.png in Resources */,
 				BBF9D1F817448C89008CE8AA /* p2.png in Resources */,
 				BBF9D1F917448C89008CE8AA /* p2small.png in Resources */,
+				BB7D6D0117456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png in Resources */,
+				BBA59A9017457F590025E68E /* ipadiconsmall1.png in Resources */,
+				BBA59A9217457F660025E68E /* ipadiconlarge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
