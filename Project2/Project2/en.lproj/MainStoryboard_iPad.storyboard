@@ -386,31 +386,6 @@ http://web.ebscohost.com/ehost/pdfviewer/pdfviewer?sid=f749f99c-b420-41b9-8d41-9
         <image name="first.png" width="30" height="30"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="DataBaseViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DataBaseViewController.h"/>
-        </class>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="AppOwnerAge" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="AppOwnerName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RobotDetailsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RobotDetailsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="robotInfoLabel" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="robotNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

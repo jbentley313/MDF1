@@ -128,7 +128,6 @@
 				BBD5F6B11741BABA001B1DD5 /* AppDelegate.h */,
 				BBD5F6B21741BABA001B1DD5 /* AppDelegate.m */,
 				BBD5F6BA1741BABA001B1DD5 /* MainStoryboard_iPhone.storyboard */,
-				BB7D6D0017456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png */,
 				BBD5F6BD1741BABA001B1DD5 /* MainStoryboard_iPad.storyboard */,
 				BBD5F6C01741BABA001B1DD5 /* FirstViewController.h */,
 				BBD5F6C11741BABA001B1DD5 /* FirstViewController.m */,
@@ -154,6 +153,7 @@
 		BBD5F6A91741BABA001B1DD5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB7D6D0017456A2C00E8A11E /* Screen Shot 2013-05-16 at 12.24.13 PM.png */,
 				BBD5F6AA1741BABA001B1DD5 /* Project2-Info.plist */,
 				BBD5F6AB1741BABA001B1DD5 /* InfoPlist.strings */,
 				BBD5F6AE1741BABA001B1DD5 /* main.m */,
