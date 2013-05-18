@@ -21,10 +21,10 @@
 		BB53D7121747E4F800104923 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53D7111747E4F800104923 /* FirstViewController.m */; };
 		BB53D7141747E4F800104923 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D7131747E4F800104923 /* first.png */; };
 		BB53D7161747E4F800104923 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D7151747E4F800104923 /* first@2x.png */; };
-		BB53D7191747E4F800104923 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53D7181747E4F800104923 /* SecondViewController.m */; };
 		BB53D71B1747E4F800104923 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D71A1747E4F800104923 /* second.png */; };
 		BB53D71D1747E4F800104923 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D71C1747E4F800104923 /* second@2x.png */; };
 		BB53D7241747E81700104923 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D7231747E81700104923 /* MapKit.framework */; };
+		BB53D7271747EEFB00104923 /* FullMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53D7261747EEFB00104923 /* FullMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +47,11 @@
 		BB53D7111747E4F800104923 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BB53D7131747E4F800104923 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BB53D7151747E4F800104923 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BB53D7171747E4F800104923 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BB53D7181747E4F800104923 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB53D71A1747E4F800104923 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BB53D71C1747E4F800104923 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BB53D7231747E81700104923 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BB53D7251747EEFB00104923 /* FullMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullMapViewController.h; sourceTree = "<group>"; };
+		BB53D7261747EEFB00104923 /* FullMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 		BB53D6E61747E4F800104923 = {
 			isa = PBXGroup;
 			children = (
-				BB53D7231747E81700104923 /* MapKit.framework */,
 				BB53D6F81747E4F800104923 /* Project3 */,
 				BB53D6F11747E4F800104923 /* Frameworks */,
 				BB53D6F01747E4F800104923 /* Products */,
@@ -90,6 +89,7 @@
 		BB53D6F11747E4F800104923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB53D7231747E81700104923 /* MapKit.framework */,
 				BB53D6F21747E4F800104923 /* UIKit.framework */,
 				BB53D6F41747E4F800104923 /* Foundation.framework */,
 				BB53D6F61747E4F800104923 /* CoreGraphics.framework */,
@@ -108,11 +108,11 @@
 				BB53D7111747E4F800104923 /* FirstViewController.m */,
 				BB53D7131747E4F800104923 /* first.png */,
 				BB53D7151747E4F800104923 /* first@2x.png */,
-				BB53D7171747E4F800104923 /* SecondViewController.h */,
-				BB53D7181747E4F800104923 /* SecondViewController.m */,
 				BB53D71A1747E4F800104923 /* second.png */,
 				BB53D71C1747E4F800104923 /* second@2x.png */,
 				BB53D6F91747E4F800104923 /* Supporting Files */,
+				BB53D7251747EEFB00104923 /* FullMapViewController.h */,
+				BB53D7261747EEFB00104923 /* FullMapViewController.m */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 				BB53D6FF1747E4F800104923 /* main.m in Sources */,
 				BB53D7031747E4F800104923 /* AppDelegate.m in Sources */,
 				BB53D7121747E4F800104923 /* FirstViewController.m in Sources */,
-				BB53D7191747E4F800104923 /* SecondViewController.m in Sources */,
+				BB53D7271747EEFB00104923 /* FullMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

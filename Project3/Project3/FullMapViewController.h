@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FullMapViewController.h
 //  Project3
 //
 //  Created by Jason Bentley on 5/18/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface FullMapViewController : UIViewController
 
 @end
