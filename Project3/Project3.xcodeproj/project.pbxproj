@@ -24,6 +24,7 @@
 		BB53D7191747E4F800104923 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53D7181747E4F800104923 /* SecondViewController.m */; };
 		BB53D71B1747E4F800104923 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D71A1747E4F800104923 /* second.png */; };
 		BB53D71D1747E4F800104923 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D71C1747E4F800104923 /* second@2x.png */; };
+		BB53D7241747E81700104923 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D7231747E81700104923 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		BB53D7181747E4F800104923 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB53D71A1747E4F800104923 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BB53D71C1747E4F800104923 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BB53D7231747E81700104923 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB53D7241747E81700104923 /* MapKit.framework in Frameworks */,
 				BB53D6F31747E4F800104923 /* UIKit.framework in Frameworks */,
 				BB53D6F51747E4F800104923 /* Foundation.framework in Frameworks */,
 				BB53D6F71747E4F800104923 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		BB53D6E61747E4F800104923 = {
 			isa = PBXGroup;
 			children = (
+				BB53D7231747E81700104923 /* MapKit.framework */,
 				BB53D6F81747E4F800104923 /* Project3 */,
 				BB53D6F11747E4F800104923 /* Frameworks */,
 				BB53D6F01747E4F800104923 /* Products */,
