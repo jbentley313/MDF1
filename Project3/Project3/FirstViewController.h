@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface FirstViewController : UITableViewController
+{
+    NSMutableArray *businesses;
+}
+
+@property NSMutableArray *businesses;
 
 @end

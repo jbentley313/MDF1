@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB370A0D1748237100A02029 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB370A0C1748237100A02029 /* CoreLocation.framework */; };
+		BB370A101748254100A02029 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB370A0F1748254100A02029 /* DetailsViewController.m */; };
+		BB370A131748260C00A02029 /* BusinessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB370A121748260C00A02029 /* BusinessInfo.m */; };
+		BB370A1617482C3500A02029 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB370A1517482C3500A02029 /* DataManager.m */; };
 		BB53D6F31747E4F800104923 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D6F21747E4F800104923 /* UIKit.framework */; };
 		BB53D6F51747E4F800104923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D6F41747E4F800104923 /* Foundation.framework */; };
 		BB53D6F71747E4F800104923 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D6F61747E4F800104923 /* CoreGraphics.framework */; };
@@ -28,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB370A0C1748237100A02029 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BB370A0E1748254100A02029 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		BB370A0F1748254100A02029 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		BB370A111748260C00A02029 /* BusinessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessInfo.h; sourceTree = "<group>"; };
+		BB370A121748260C00A02029 /* BusinessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessInfo.m; sourceTree = "<group>"; };
+		BB370A1417482C3500A02029 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		BB370A1517482C3500A02029 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		BB53D6EF1747E4F800104923 /* Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB53D6F21747E4F800104923 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB53D6F41747E4F800104923 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB370A0D1748237100A02029 /* CoreLocation.framework in Frameworks */,
 				BB53D7241747E81700104923 /* MapKit.framework in Frameworks */,
 				BB53D6F31747E4F800104923 /* UIKit.framework in Frameworks */,
 				BB53D6F51747E4F800104923 /* Foundation.framework in Frameworks */,
@@ -89,6 +101,7 @@
 		BB53D6F11747E4F800104923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB370A0C1748237100A02029 /* CoreLocation.framework */,
 				BB53D7231747E81700104923 /* MapKit.framework */,
 				BB53D6F21747E4F800104923 /* UIKit.framework */,
 				BB53D6F41747E4F800104923 /* Foundation.framework */,
@@ -110,9 +123,15 @@
 				BB53D7151747E4F800104923 /* first@2x.png */,
 				BB53D71A1747E4F800104923 /* second.png */,
 				BB53D71C1747E4F800104923 /* second@2x.png */,
-				BB53D6F91747E4F800104923 /* Supporting Files */,
 				BB53D7251747EEFB00104923 /* FullMapViewController.h */,
 				BB53D7261747EEFB00104923 /* FullMapViewController.m */,
+				BB370A0E1748254100A02029 /* DetailsViewController.h */,
+				BB370A0F1748254100A02029 /* DetailsViewController.m */,
+				BB370A111748260C00A02029 /* BusinessInfo.h */,
+				BB370A121748260C00A02029 /* BusinessInfo.m */,
+				BB370A1417482C3500A02029 /* DataManager.h */,
+				BB370A1517482C3500A02029 /* DataManager.m */,
+				BB53D6F91747E4F800104923 /* Supporting Files */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
@@ -206,6 +225,9 @@
 				BB53D7031747E4F800104923 /* AppDelegate.m in Sources */,
 				BB53D7121747E4F800104923 /* FirstViewController.m in Sources */,
 				BB53D7271747EEFB00104923 /* FullMapViewController.m in Sources */,
+				BB370A101748254100A02029 /* DetailsViewController.m in Sources */,
+				BB370A131748260C00A02029 /* BusinessInfo.m in Sources */,
+				BB370A1617482C3500A02029 /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +360,7 @@
 				BB53D7221747E4F800104923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

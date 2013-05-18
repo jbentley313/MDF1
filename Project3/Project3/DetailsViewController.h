@@ -1,5 +1,5 @@
 //
-//  FullMapViewController.h
+//  DetailsViewController.h
 //  Project3
 //
 //  Created by Jason Bentley on 5/18/13.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-
-@interface FullMapViewController : UIViewController
+@interface DetailsViewController : UIViewController
 {
-    
+    IBOutlet MKMapView *mapview;
 }
 
 @end
