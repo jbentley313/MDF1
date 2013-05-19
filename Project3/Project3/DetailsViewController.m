@@ -13,6 +13,7 @@
 @end
 
 @implementation DetailsViewController
+@synthesize bizObject, bizLongLabel, bizLatLabel, bizNameLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +26,15 @@
 
 - (void)viewDidLoad
 {
+    //convert coordinates to NSStrings
+    NSString *coordLatToString =[[NSNumber numberWithInt:bizObject.location.latitude] stringValue];
+    NSString *coordLongToString =[[NSNumber numberWithInt:bizObject.location.longitude] stringValue];
+    
+    //set labels 
+    bizNameLabel.text = self.bizObject.businessName;
+    bizLatLabel.text = coordLatToString;
+    bizLongLabel.text = coordLongToString;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

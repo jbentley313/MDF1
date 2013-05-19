@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "BusinessInfo.h"
 #import "DataManager.h"
+#import "DetailsViewController.h"
 
 @interface FirstViewController ()
 
@@ -20,9 +21,9 @@
 - (void)viewDidLoad
 {
     //instantiate businessInfos
-    BusinessInfo *info1 = [[BusinessInfo alloc] initWithName:@"Bob's" loc:CLLocationCoordinate2DMake(26.4f, -80.3f)];
+    BusinessInfo *info1 = [[BusinessInfo alloc] initWithName:@"Bob's Custom Glasses" loc:CLLocationCoordinate2DMake(26.4f, -80.3f)];
     
-    BusinessInfo *info2 = [[BusinessInfo alloc] initWithName:@"Wendy's Elsewhere" loc:CLLocationCoordinate2DMake(46.4f, -30.3f)];
+    BusinessInfo *info2 = [[BusinessInfo alloc] initWithName:@"Wendy's Codefactory" loc:CLLocationCoordinate2DMake(46.4f, -30.3f)];
     
     BusinessInfo *info3 = [[BusinessInfo alloc] initWithName:@"Jason's Biz" loc:CLLocationCoordinate2DMake(26.4f, -80.3f)];
     
@@ -88,7 +89,21 @@
     return cell;
 }
 
-
+//segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"DetailsSegue"]) {
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        BusinessInfo *bizSelected = [businesses objectAtIndex:indexPath.row];
+        
+        DetailsViewController *BusinessDetails = (DetailsViewController *)segue.destinationViewController;
+        
+        BusinessDetails.bizObject = bizSelected;
+        
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {

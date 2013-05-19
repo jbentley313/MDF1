@@ -16,4 +16,5 @@
 
 @property NSMutableArray *businesses;
 
+
 @end
