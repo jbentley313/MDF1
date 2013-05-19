@@ -26,9 +26,9 @@
 
 - (void)viewDidLoad
 {
-    //convert coordinates to NSStrings
-    NSString *coordLatToString =[[NSNumber numberWithInt:bizObject.location.latitude] stringValue];
-    NSString *coordLongToString =[[NSNumber numberWithInt:bizObject.location.longitude] stringValue];
+    //convert coordinate numbers to NSStrings
+    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.location.latitude] stringValue];
+    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.location.longitude] stringValue];
     
     //set labels 
     bizNameLabel.text = self.bizObject.businessName;
