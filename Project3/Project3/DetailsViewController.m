@@ -7,6 +7,8 @@
 //
 
 #import "DetailsViewController.h"
+#import <MapKit/MapKit.h>
+#import "DataManager.h"
 
 @interface DetailsViewController ()
 
@@ -27,13 +29,14 @@
 - (void)viewDidLoad
 {
     //convert coordinate numbers to NSStrings
-    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.location.latitude] stringValue];
-    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.location.longitude] stringValue];
+    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.coordinate.latitude] stringValue];
+    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.coordinate.longitude] stringValue];
     
     //set labels 
     bizNameLabel.text = self.bizObject.businessName;
     bizLatLabel.text = coordLatToString;
     bizLongLabel.text = coordLongToString;
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -43,6 +46,31 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    //mapview span
+    MKCoordinateSpan span;
+    span.latitudeDelta= .5f;
+    span.longitudeDelta= .5f;
+    
+    //set location from coords
+    CLLocationCoordinate2D location;
+    location.latitude = bizObject.coordinate.latitude;
+    location.longitude = bizObject.coordinate.longitude;
+    
+    //region
+    MKCoordinateRegion region;
+    region.center = location;
+    region.span = span;
+    mapview.region = region;
+    
+    //annotation
+    BusinessInfo *myAnnotation = [[BusinessInfo alloc] initWithName:bizObject.businessName loc:location];
+    if (myAnnotation != nil) {
+        [mapview addAnnotation:myAnnotation];
+    }
 }
 
 @end

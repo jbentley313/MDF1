@@ -11,14 +11,17 @@
 #import "FirstViewController.h"
 #import "BusinessInfo.h"
 
-@interface DetailsViewController : UIViewController
+@interface DetailsViewController : UIViewController <MKAnnotation>
 {
     IBOutlet MKMapView *mapview;
+    
 }
+
 @property(weak)IBOutlet UILabel *bizNameLabel;
 @property(weak)IBOutlet UILabel *bizLatLabel;
 @property(weak)IBOutlet UILabel *bizLongLabel;
 
 @property(strong) BusinessInfo *bizObject;
+
 
 @end

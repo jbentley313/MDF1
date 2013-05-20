@@ -7,6 +7,7 @@
 //
 
 #import "FullMapViewController.h"
+#import "DetailsViewController.h"
 
 @interface FullMapViewController ()
 
@@ -25,6 +26,10 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

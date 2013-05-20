@@ -21,9 +21,9 @@
 - (void)viewDidLoad
 {
     //instantiate businessInfos
-    BusinessInfo *info1 = [[BusinessInfo alloc] initWithName:@"Bob's Custom Glasses" loc:CLLocationCoordinate2DMake(26.43234f, -80.33333333f)];
+    BusinessInfo *info1 = [[BusinessInfo alloc] initWithName:@"Bob's Custom Glasses" loc:CLLocationCoordinate2DMake(39.880542f, -86.249249f)];
     
-    BusinessInfo *info2 = [[BusinessInfo alloc] initWithName:@"Wendy's Codefactory" loc:CLLocationCoordinate2DMake(46.4f, -30.3f)];
+    BusinessInfo *info2 = [[BusinessInfo alloc] initWithName:@"Wendy's Codefactory" loc:CLLocationCoordinate2DMake(46.42f, -30.32f)];
     
     BusinessInfo *info3 = [[BusinessInfo alloc] initWithName:@"Jason's Biz" loc:CLLocationCoordinate2DMake(26.4f, -80.3f)];
     

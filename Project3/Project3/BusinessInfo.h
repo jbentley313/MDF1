@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface BusinessInfo : NSObject
+@interface BusinessInfo : NSObject <MKAnnotation>
 {
     NSString *businessName;
-    CLLocationCoordinate2D location;
+    CLLocationCoordinate2D coordinate;
 }
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
-@property (nonatomic, strong) NSString *businessName;
-@property (nonatomic, assign) CLLocationCoordinate2D location;
+@property (nonatomic, copy) NSString *businessName;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 
 @end
