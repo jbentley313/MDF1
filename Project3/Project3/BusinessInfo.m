@@ -9,16 +9,14 @@
 #import "BusinessInfo.h"
 
 @implementation BusinessInfo
-{
-    
-}
 
-@synthesize businessName, coordinate;
+
+@synthesize title, coordinate;
 
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc
 {
     if ((self = [super init])) {
-        businessName = name;
+        title = name;
         coordinate = loc;
     }
     

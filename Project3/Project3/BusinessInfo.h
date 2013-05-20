@@ -12,11 +12,13 @@
 
 @interface BusinessInfo : NSObject <MKAnnotation>
 {
-    NSString *businessName;
+    NSString *title;
     CLLocationCoordinate2D coordinate;
+   
 }
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
-@property (nonatomic, copy) NSString *businessName;
-@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+
 
 @end

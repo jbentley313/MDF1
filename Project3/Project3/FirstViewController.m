@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    //instantiate businessInfos
+        //instantiate businessInfos
     BusinessInfo *info1 = [[BusinessInfo alloc] initWithName:@"Bob's Custom Glasses" loc:CLLocationCoordinate2DMake(39.880542f, -86.249249f)];
     
     BusinessInfo *info2 = [[BusinessInfo alloc] initWithName:@"Wendy's Codefactory" loc:CLLocationCoordinate2DMake(46.42f, -30.32f)];
@@ -44,7 +44,7 @@
     //add objects to array in datamanager
     DataManager *manager = [DataManager sharedDataManager];
     if (manager !=nil) {
-        businesses = manager.businesses;
+        businesses = manager.businessesMG;
         if (businesses !=nil) {
             [businesses addObject:info1];
             [businesses addObject:info2];
@@ -69,9 +69,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     DataManager *manager = [DataManager sharedDataManager];
-   
-        return [manager.businesses count];
-    NSLog(@"%lu", (unsigned long)[manager.businesses count]);
+    
+    return [manager.businessesMG count];
 }
 
 //load reusable cells
@@ -83,7 +82,7 @@
     
     BusinessInfo *passed = [businesses objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = passed.businessName;
+    cell.textLabel.text = passed.title;
     
     
     return cell;

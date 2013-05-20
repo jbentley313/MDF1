@@ -10,9 +10,10 @@
 
 @implementation DataManager
 
-@synthesize businesses;
+@synthesize businessesMG;
 
 static DataManager* _sharedDataManager = nil;
+
 
 +(DataManager*)sharedDataManager
 {
@@ -25,7 +26,7 @@ static DataManager* _sharedDataManager = nil;
 -(id)init
 {
     if ((self = [super init])) {
-        businesses = [[NSMutableArray alloc]init];
+        businessesMG = [[NSMutableArray alloc]init];
     }
     return self;
 }

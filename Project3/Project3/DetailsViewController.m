@@ -33,7 +33,7 @@
     NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.coordinate.longitude] stringValue];
     
     //set labels 
-    bizNameLabel.text = self.bizObject.businessName;
+    bizNameLabel.text = self.bizObject.title;
     bizLatLabel.text = coordLatToString;
     bizLongLabel.text = coordLongToString;
     
@@ -67,7 +67,7 @@
     mapview.region = region;
     
     //annotation
-    BusinessInfo *myAnnotation = [[BusinessInfo alloc] initWithName:bizObject.businessName loc:location];
+    BusinessInfo *myAnnotation = [[BusinessInfo alloc] initWithName:bizObject.title loc:location];
     if (myAnnotation != nil) {
         [mapview addAnnotation:myAnnotation];
     }
