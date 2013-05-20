@@ -10,15 +10,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface BusinessInfo : NSObject <MKAnnotation>
+@interface BusinessInfo : NSObject 
 {
-    NSString *title;
-    CLLocationCoordinate2D coordinate;
+    NSString *businessName;
+    CLLocationCoordinate2D location;
    
 }
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *businessName;
+@property (nonatomic, readonly) CLLocationCoordinate2D location;
 
 
 @end

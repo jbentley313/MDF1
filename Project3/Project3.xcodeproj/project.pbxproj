@@ -29,6 +29,7 @@
 		BB53D71D1747E4F800104923 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB53D71C1747E4F800104923 /* second@2x.png */; };
 		BB53D7241747E81700104923 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53D7231747E81700104923 /* MapKit.framework */; };
 		BB53D7271747EEFB00104923 /* FullMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53D7261747EEFB00104923 /* FullMapViewController.m */; };
+		BB67758C174A95BF00328BF7 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB67758B174A95BF00328BF7 /* MyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		BB53D7231747E81700104923 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BB53D7251747EEFB00104923 /* FullMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullMapViewController.h; sourceTree = "<group>"; };
 		BB53D7261747EEFB00104923 /* FullMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMapViewController.m; sourceTree = "<group>"; };
+		BB67758A174A95BF00328BF7 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		BB67758B174A95BF00328BF7 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				BB370A1417482C3500A02029 /* DataManager.h */,
 				BB370A1517482C3500A02029 /* DataManager.m */,
 				BB53D6F91747E4F800104923 /* Supporting Files */,
+				BB67758A174A95BF00328BF7 /* MyAnnotation.h */,
+				BB67758B174A95BF00328BF7 /* MyAnnotation.m */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				BB370A101748254100A02029 /* DetailsViewController.m in Sources */,
 				BB370A131748260C00A02029 /* BusinessInfo.m in Sources */,
 				BB370A1617482C3500A02029 /* DataManager.m in Sources */,
+				BB67758C174A95BF00328BF7 /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

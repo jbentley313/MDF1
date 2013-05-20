@@ -82,7 +82,7 @@
     
     BusinessInfo *passed = [businesses objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = passed.title;
+    cell.textLabel.text = passed.businessName;
     
     
     return cell;

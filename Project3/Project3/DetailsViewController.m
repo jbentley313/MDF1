@@ -9,6 +9,7 @@
 #import "DetailsViewController.h"
 #import <MapKit/MapKit.h>
 #import "DataManager.h"
+#import "myAnnotation.h"
 
 @interface DetailsViewController ()
 
@@ -29,11 +30,11 @@
 - (void)viewDidLoad
 {
     //convert coordinate numbers to NSStrings
-    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.coordinate.latitude] stringValue];
-    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.coordinate.longitude] stringValue];
+    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.location.latitude] stringValue];
+    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.location.longitude] stringValue];
     
     //set labels 
-    bizNameLabel.text = self.bizObject.title;
+    bizNameLabel.text = self.bizObject.businessName;
     bizLatLabel.text = coordLatToString;
     bizLongLabel.text = coordLongToString;
     
@@ -57,8 +58,8 @@
     
     //set location from coords
     CLLocationCoordinate2D location;
-    location.latitude = bizObject.coordinate.latitude;
-    location.longitude = bizObject.coordinate.longitude;
+    location.latitude = bizObject.location.latitude;
+    location.longitude = bizObject.location.longitude;
     
     //region
     MKCoordinateRegion region;
@@ -67,7 +68,7 @@
     mapview.region = region;
     
     //annotation
-    BusinessInfo *myAnnotation = [[BusinessInfo alloc] initWithName:bizObject.title loc:location];
+    MyAnnotation *myAnnotation = [[MyAnnotation alloc] initWithName:bizObject.businessName loc:location];
     if (myAnnotation != nil) {
         [mapview addAnnotation:myAnnotation];
     }
