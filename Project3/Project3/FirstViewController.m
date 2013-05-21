@@ -78,7 +78,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     BusinessInfo *passed = [businesses objectAtIndex:indexPath.row];
     
@@ -88,12 +88,37 @@
     return cell;
 }
 
+//table cell editing style
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+//edit button
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = [UIButton alloc];
+    if (button != nil) {
+        if (self.tableView.editing == NO) {
+            //editing mode enable
+            [self.tableView setEditing:YES animated:YES];
+        }
+        else {
+            //editing disable
+            [self.tableView setEditing:NO animated:YES];
+        }
+    }
+}
+
+
+
+
 //segue
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"DetailsSegue"]) {
         UITableViewCell *cell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        NSIndexPath *indexPath = [tableView indexPathForCell:cell];
         BusinessInfo *bizSelected = [businesses objectAtIndex:indexPath.row];
         
         DetailsViewController *BusinessDetails = (DetailsViewController *)segue.destinationViewController;

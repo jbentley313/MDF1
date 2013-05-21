@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface FirstViewController : UITableViewController
+@interface FirstViewController : UITableViewController <UITableViewDelegate>
 {
     NSMutableArray *businesses;
+    IBOutlet UITableView *tableView;
+    
 }
+-(IBAction)onClick:(id)sender;
 
 @property NSMutableArray *businesses;
 
