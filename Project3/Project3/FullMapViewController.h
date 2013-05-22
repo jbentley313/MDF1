@@ -10,9 +10,12 @@
 #import <MapKit/MapKit.h>
 
 
-@interface FullMapViewController : UIViewController
+@interface FullMapViewController : UIViewController 
 {
-   
+    NSMutableArray *allBusinessesArray;
+    IBOutlet MKMapView *fullMapView;
 }
+
+//@property(strong) NSMutableArray *allBusinessesArray;
 
 @end

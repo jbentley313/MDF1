@@ -13,12 +13,12 @@
 @interface BusinessInfo : NSObject 
 {
     NSString *businessName;
-    CLLocationCoordinate2D location;
+    CLLocationCoordinate2D locationB;
    
 }
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
 @property (nonatomic, copy) NSString *businessName;
-@property (nonatomic, readonly) CLLocationCoordinate2D location;
+@property (nonatomic, readonly) CLLocationCoordinate2D locationB;
 
 
 @end

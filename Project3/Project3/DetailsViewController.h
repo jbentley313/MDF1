@@ -10,11 +10,12 @@
 #import <MapKit/MapKit.h>
 #import "FirstViewController.h"
 #import "BusinessInfo.h"
+#import "DataManager.h"
 
-@interface DetailsViewController : UIViewController <MKAnnotation>
+@interface DetailsViewController : UIViewController 
 {
     IBOutlet MKMapView *mapview;
-    
+    NSMutableArray *businessesD;
 }
 
 @property(weak)IBOutlet UILabel *bizNameLabel;
@@ -22,6 +23,7 @@
 @property(weak)IBOutlet UILabel *bizLongLabel;
 
 @property(strong) BusinessInfo *bizObject;
+@property(strong) NSMutableArray *businessesD;
 
 
 @end

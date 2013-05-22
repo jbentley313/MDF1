@@ -11,13 +11,13 @@
 
 @interface FirstViewController : UITableViewController <UITableViewDelegate>
 {
-    NSMutableArray *businesses;
+    NSMutableArray *businessesF;
     IBOutlet UITableView *tableView;
     
 }
 -(IBAction)onClick:(id)sender;
 
-@property NSMutableArray *businesses;
+@property(strong) NSMutableArray *businessesF;
 
 
 @end

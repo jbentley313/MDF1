@@ -16,7 +16,7 @@
 @end
 
 @implementation FirstViewController
-@synthesize businesses;
+@synthesize businessesF;
 
 - (void)viewDidLoad
 {
@@ -44,18 +44,18 @@
     //add objects to array in datamanager
     DataManager *manager = [DataManager sharedDataManager];
     if (manager !=nil) {
-        businesses = manager.businessesMG;
-        if (businesses !=nil) {
-            [businesses addObject:info1];
-            [businesses addObject:info2];
-            [businesses addObject:info3];
-            [businesses addObject:info4];
-            [businesses addObject:info5];
-            [businesses addObject:info6];
-            [businesses addObject:info7];
-            [businesses addObject:info8];
-            [businesses addObject:info9];
-            [businesses addObject:info10];
+        businessesF = manager.businessesMG;
+        if (businessesF !=nil) {
+            [businessesF addObject:info1];
+            [businessesF addObject:info2];
+            [businessesF addObject:info3];
+            [businessesF addObject:info4];
+            [businessesF addObject:info5];
+            [businessesF addObject:info6];
+            [businessesF addObject:info7];
+            [businessesF addObject:info8];
+            [businessesF addObject:info9];
+            [businessesF addObject:info10];
         }
     }
     
@@ -76,11 +76,15 @@
 //load reusable cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    static NSString *CellIdentifier = @"Cell";
+//    DataManager *manager = [DataManager sharedDataManager];
+//    
+//        businessesF = manager.businessesMG;
+    
+    static NSString *CellIdentifier = @"Celli";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    BusinessInfo *passed = [businesses objectAtIndex:indexPath.row];
+    BusinessInfo *passed = [businessesF objectAtIndex:indexPath.row];
     
     cell.textLabel.text = passed.businessName;
     
@@ -99,27 +103,43 @@
 {
     UIButton *button = [UIButton alloc];
     if (button != nil) {
-        if (self.tableView.editing == NO) {
+        if (tableView.editing == NO) {
             //editing mode enable
-            [self.tableView setEditing:YES animated:YES];
+            [tableView setEditing:YES animated:YES];
         }
         else {
             //editing disable
-            [self.tableView setEditing:NO animated:YES];
+            [tableView setEditing:NO animated:YES];
         }
     }
 }
 
+//commit edit (delete)
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    //remove object from array if "delete" is the editing style
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [businessesF removeObjectAtIndex:indexPath.row];
+        
+        //remove from tableview as well
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+        
+    }
+    
 
+}
 
 
 //segue
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"DetailsSegue"]) {
+//        DataManager *manager = [DataManager sharedDataManager];
+//       
+//            businessesF = manager.businessesMG;
         UITableViewCell *cell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [tableView indexPathForCell:cell];
-        BusinessInfo *bizSelected = [businesses objectAtIndex:indexPath.row];
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        BusinessInfo *bizSelected = [businessesF objectAtIndex:indexPath.row];
         
         DetailsViewController *BusinessDetails = (DetailsViewController *)segue.destinationViewController;
         

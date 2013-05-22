@@ -16,7 +16,7 @@
 @end
 
 @implementation DetailsViewController
-@synthesize bizObject, bizLongLabel, bizLatLabel, bizNameLabel;
+@synthesize bizObject, bizLongLabel, bizLatLabel, bizNameLabel, businessesD;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,12 +29,18 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
+    
+    
+    
     //convert coordinate numbers to NSStrings
-    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.location.latitude] stringValue];
-    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.location.longitude] stringValue];
+    NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.locationB.latitude] stringValue];
+    NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.locationB.longitude] stringValue];
     
     //set labels 
-    bizNameLabel.text = self.bizObject.businessName;
+    bizNameLabel.text = bizObject.businessName;
     bizLatLabel.text = coordLatToString;
     bizLongLabel.text = coordLongToString;
     
@@ -58,8 +64,8 @@
     
     //set location from coords
     CLLocationCoordinate2D location;
-    location.latitude = bizObject.location.latitude;
-    location.longitude = bizObject.location.longitude;
+    location.latitude = bizObject.locationB.latitude;
+    location.longitude = bizObject.locationB.longitude;
     
     //region
     MKCoordinateRegion region;
@@ -68,9 +74,9 @@
     mapview.region = region;
     
     //annotation
-    MyAnnotation *myAnnotation = [[MyAnnotation alloc] initWithName:bizObject.businessName loc:location];
-    if (myAnnotation != nil) {
-        [mapview addAnnotation:myAnnotation];
+    MyAnnotation *myAnnotation1 = [[MyAnnotation alloc] initWithName:bizObject.businessName loc:location];
+    if (myAnnotation1 != nil) {
+        [mapview addAnnotation:myAnnotation1];
     }
 }
 
