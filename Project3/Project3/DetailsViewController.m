@@ -29,12 +29,7 @@
 
 - (void)viewDidLoad
 {
-    
-    
-    
-    
-    
-    
+
     //convert coordinate numbers to NSStrings
     NSString *coordLatToString =[[NSNumber numberWithFloat:bizObject.locationB.latitude] stringValue];
     NSString *coordLongToString =[[NSNumber numberWithFloat:bizObject.locationB.longitude] stringValue];

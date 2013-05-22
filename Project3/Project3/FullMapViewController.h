@@ -17,5 +17,8 @@
 }
 
 //@property(strong) NSMutableArray *allBusinessesArray;
+@property MKMapView *fullMapView;
+//@property NSArray *allBusinessesArray;
+
 
 @end
