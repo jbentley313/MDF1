@@ -63,7 +63,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="BD1-T3-48t"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="-138"/>
+            <point key="canvasLocation" x="1315" y="-646"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="yX1-0G-ULf">
@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sp5-mg-cGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="-138"/>
+            <point key="canvasLocation" x="1675" y="-646"/>
         </scene>
         <!--Full Map View Controller - Second-->
         <scene sceneID="13">
@@ -162,14 +162,14 @@
                             <constraint firstItem="T9S-mG-lGn" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="hx5-oY-J4M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Full Map" image="second" id="6"/>
                     <connections>
                         <outlet property="fullMapView" destination="T9S-mG-lGn" id="8ra-Vb-4e8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="526"/>
+            <point key="canvasLocation" x="1307" y="154"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -188,13 +188,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="412" y="-328"/>
         </scene>
-        <!--Navigation Controller - First-->
+        <!--Navigation Controller - Biz List-->
         <scene sceneID="kkR-iy-xZ0">
             <objects>
                 <navigationController id="0Cq-Br-LeY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Biz List" image="first" id="7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dby-sE-xUv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -207,42 +207,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhc-Iy-4M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="933" y="-646"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="DetailsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bizLatLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bizLongLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bizNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="FirstViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="SwipeRec:"/>
-                <relationship kind="action" name="onClick:"/>
-                <relationship kind="outlet" name="editBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="FullMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FullMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="fullMapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

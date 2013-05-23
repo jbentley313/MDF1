@@ -53,7 +53,7 @@
     for (int i = 0 ; i < allBusinessesArray.count; i++) {
         MyAnnotation *fullMapAnns = [[MyAnnotation alloc] initWithName:[[allBusinessesArray objectAtIndex:i]businessName] loc:[[allBusinessesArray objectAtIndex:i]locationB]];
     
-        //add annotations
+        //add annotations to view
         [fullMapView addAnnotation:fullMapAnns];
     }
  
