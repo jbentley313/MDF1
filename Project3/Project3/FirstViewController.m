@@ -124,15 +124,11 @@
         //remove from tableview as well
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
         
-        
-        //remove annotations and repopulate
-        FullMapViewController *FullMVC = [FullMapViewController alloc];
-        [FullMVC.fullMapView removeAnnotations:[FullMVC.fullMapView annotations]];
+                
         
         
         
     }
-    
     
 }
 

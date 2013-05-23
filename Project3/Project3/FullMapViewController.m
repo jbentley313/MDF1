@@ -17,7 +17,7 @@
 @end
 
 @implementation FullMapViewController
-@synthesize fullMapView;
+@synthesize fullMapView, allBusinessesArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,24 +32,31 @@
 - (void)viewDidLoad
 {
         
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    //remove all existing annotations
+    NSMutableArray * removeTheseAnnotations = [fullMapView.annotations mutableCopy] ;
+    
+    [fullMapView removeAnnotations:removeTheseAnnotations ] ;
+
+    
+    //get array from data manager
     DataManager *manager = [DataManager sharedDataManager];
     
     allBusinessesArray = manager.businessesMG;
     
-    
+    //loop through all businesses and create annotations
     for (int i = 0 ; i < allBusinessesArray.count; i++) {
         MyAnnotation *fullMapAnns = [[MyAnnotation alloc] initWithName:[[allBusinessesArray objectAtIndex:i]businessName] loc:[[allBusinessesArray objectAtIndex:i]locationB]];
-        
+    
+        //add annotations
         [fullMapView addAnnotation:fullMapAnns];
     }
-    
+ 
     //mapview span
     MKCoordinateSpan span;
     span.latitudeDelta= 20.0f;
@@ -60,14 +67,8 @@
     region.center = [[allBusinessesArray objectAtIndex:0]locationB];
     region.span = span;
     fullMapView.region = region;
-    
-    
-    
-    
-    
-    
-}
 
+}
 
 - (void)didReceiveMemoryWarning
 {

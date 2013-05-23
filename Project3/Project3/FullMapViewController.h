@@ -16,9 +16,7 @@
     IBOutlet MKMapView *fullMapView;
 }
 
-//@property(strong) NSMutableArray *allBusinessesArray;
 @property MKMapView *fullMapView;
-//@property NSArray *allBusinessesArray;
-
+@property NSMutableArray *allBusinessesArray;
 
 @end
