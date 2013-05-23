@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Celli" id="p3B-Z0-YA4">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -21,6 +22,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <gestureRecognizers/>
                                 <connections>
                                     <segue destination="XOj-mr-dOa" kind="push" identifier="DetailsSegue" id="gwr-CF-2eH"/>
                                 </connections>
@@ -29,6 +31,7 @@
                         <connections>
                             <outlet property="dataSource" destination="2" id="w8s-M1-4z1"/>
                             <outlet property="delegate" destination="2" id="afa-op-dpm"/>
+                            <outletCollection property="gestureRecognizers" destination="BD1-T3-48t" appends="YES" id="bWE-oI-QjO"/>
                         </connections>
                     </tableView>
                     <toolbarItems/>
@@ -53,10 +56,12 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="editBtn" destination="edr-IT-dw4" id="rwc-Mt-fjp"/>
                         <outlet property="tableView" destination="u5B-6c-mYe" id="8ex-s1-XzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="BD1-T3-48t"/>
             </objects>
             <point key="canvasLocation" x="1035" y="-138"/>
         </scene>
@@ -222,7 +227,9 @@
         <class className="FirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
+                <relationship kind="action" name="SwipeRec:"/>
                 <relationship kind="action" name="onClick:"/>
+                <relationship kind="outlet" name="editBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>

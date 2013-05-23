@@ -13,11 +13,14 @@
 {
     NSMutableArray *businessesF;
     IBOutlet UITableView *tableView;
-    
+    IBOutlet UIButton *editBtn;
+    UISwipeGestureRecognizer *rightSwipe;
+
 }
 -(IBAction)onClick:(id)sender;
 
 @property(strong) NSMutableArray *businessesF;
+
 
 
 @end

@@ -79,7 +79,7 @@
 //load reusable cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-        static NSString *CellIdentifier = @"Celli";
+    static NSString *CellIdentifier = @"Celli";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -87,14 +87,17 @@
     
     cell.textLabel.text = passed.businessName;
     
-    
     return cell;
 }
 
 //table cell editing style
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     return UITableViewCellEditingStyleDelete;
+    
+    
+    
     
 }
 
@@ -106,10 +109,14 @@
         if (self.tableView.editing == NO) {
             //editing mode enable
             [self.tableView setEditing:YES animated:YES];
+            //set button title to "Done"
+            [editBtn setTitle:@"Done" forState:normal ];
         }
         else {
             //editing disable
             [self.tableView setEditing:NO animated:YES];
+            //set button title to "Edit"
+            [editBtn setTitle:@"Edit" forState:normal ];
         }
     }
 }
@@ -117,16 +124,14 @@
 //commit edit (delete)
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+    
     //remove object from array if "delete" is the editing style
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
         [businessesF removeObjectAtIndex:indexPath.row];
         
         //remove from tableview as well
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-        
-                
-        
-        
         
     }
     
@@ -156,4 +161,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)SwipeRec:(id)sender {
+}
 @end

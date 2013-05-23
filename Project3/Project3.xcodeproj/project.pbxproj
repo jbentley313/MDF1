@@ -51,7 +51,7 @@
 		BB370A121748260C00A02029 /* BusinessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessInfo.m; sourceTree = "<group>"; };
 		BB370A1417482C3500A02029 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		BB370A1517482C3500A02029 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		BB53D6EF1747E4F800104923 /* Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB53D6EF1747E4F800104923 /* Map my Biz!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map my Biz!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB53D6F21747E4F800104923 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB53D6F41747E4F800104923 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB53D6F61747E4F800104923 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,7 +111,7 @@
 		BB53D6F01747E4F800104923 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB53D6EF1747E4F800104923 /* Project3.app */,
+				BB53D6EF1747E4F800104923 /* Map my Biz!.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			);
 			name = "Map my Biz!";
 			productName = Project3;
-			productReference = BB53D6EF1747E4F800104923 /* Project3.app */;
+			productReference = BB53D6EF1747E4F800104923 /* Map my Biz!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
