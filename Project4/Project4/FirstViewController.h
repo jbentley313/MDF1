@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UITableViewController <UITableViewDelegate , NSURLConnectionDelegate>
+{
+    IBOutlet UITableView *tableView;
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    NSMutableData *requestData;
+}
 
 @end
