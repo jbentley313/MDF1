@@ -7,12 +7,25 @@
         <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ftF-SE-Ecc">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Celli" id="Pw9-6g-5Yt">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Eoh-2V-yel" kind="push" id="F5M-An-F0X"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="2" id="Iz2-MS-z5h"/>
                             <outlet property="delegate" destination="2" id="PQJ-QD-qrj"/>
@@ -20,11 +33,27 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="7q4-ov-jZG"/>
                     <connections>
-                        <outlet property="tableView" destination="ftF-SE-Ecc" id="e5L-AO-C6I"/>
+                        <outlet property="tableView" destination="ftF-SE-Ecc" id="ZCS-oW-WPE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1179" y="-138"/>
+        </scene>
+        <!--Details Pony View Controller-->
+        <scene sceneID="6AR-Py-JZB">
+            <objects>
+                <viewController id="Eoh-2V-yel" customClass="DetailsPonyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rDr-Ak-xa8">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Bt-dD-Yda"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqy-Uf-LKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663" y="-138"/>
         </scene>
         <!--Second View Controller - Second-->
         <scene sceneID="13">
@@ -108,7 +137,10 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
-        <class className="FirstViewController" superclassName="UIViewController">
+        <class className="DetailsPonyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsPonyViewController.h"/>
+        </class>
+        <class className="FirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>

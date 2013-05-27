@@ -7,14 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pony.h"
 
-@interface FirstViewController : UITableViewController <UITableViewDelegate , NSURLConnectionDelegate>
+@interface FirstViewController : UITableViewController <UITableViewDelegate , NSURLConnectionDelegate, NSXMLParserDelegate>
 {
     IBOutlet UITableView *tableView;
     NSURLRequest *request;
     NSURL *url;
     NSURLConnection *connection;
     NSMutableData *requestData;
+   
+    NSMutableArray *objects;
+    NSMutableString *currentXMLValue;
+    
+    
 }
 
+@property NSMutableArray *objects;
+@property NSMutableString *currentXMLValue;
+@property(strong) Pony *obj;
 @end

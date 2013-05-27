@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0A860A1753FADA00B8418C /* DetailsPonyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */; };
+		BB9F81E71752E7BE00350DA7 /* Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F81E61752E7BE00350DA7 /* Pony.m */; };
 		BBF53DC51751A1E40090C329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF53DC41751A1E40090C329 /* UIKit.framework */; };
 		BBF53DC71751A1E40090C329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF53DC61751A1E40090C329 /* Foundation.framework */; };
 		BBF53DC91751A1E40090C329 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF53DC81751A1E40090C329 /* CoreGraphics.framework */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0A86081753FADA00B8418C /* DetailsPonyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsPonyViewController.h; sourceTree = "<group>"; };
+		BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsPonyViewController.m; sourceTree = "<group>"; };
+		BB9F81E51752E7BE00350DA7 /* Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pony.h; sourceTree = "<group>"; };
+		BB9F81E61752E7BE00350DA7 /* Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pony.m; sourceTree = "<group>"; };
 		BBF53DC11751A1E40090C329 /* Project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF53DC41751A1E40090C329 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBF53DC61751A1E40090C329 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +115,10 @@
 				BBF53DEC1751A1E50090C329 /* second.png */,
 				BBF53DEE1751A1E50090C329 /* second@2x.png */,
 				BBF53DCB1751A1E40090C329 /* Supporting Files */,
+				BB9F81E51752E7BE00350DA7 /* Pony.h */,
+				BB9F81E61752E7BE00350DA7 /* Pony.m */,
+				BB0A86081753FADA00B8418C /* DetailsPonyViewController.h */,
+				BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */,
 			);
 			path = Project4;
 			sourceTree = "<group>";
@@ -202,6 +212,8 @@
 				BBF53DD51751A1E40090C329 /* AppDelegate.m in Sources */,
 				BBF53DE41751A1E50090C329 /* FirstViewController.m in Sources */,
 				BBF53DEB1751A1E50090C329 /* SecondViewController.m in Sources */,
+				BB9F81E71752E7BE00350DA7 /* Pony.m in Sources */,
+				BB0A860A1753FADA00B8418C /* DetailsPonyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +346,7 @@
 				BBF53DF41751A1E50090C329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
