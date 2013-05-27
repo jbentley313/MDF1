@@ -22,7 +22,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="Eoh-2V-yel" kind="push" id="F5M-An-F0X"/>
+                                    <segue destination="Eoh-2V-yel" kind="push" identifier="PonyDetails" id="F5M-An-F0X"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -47,9 +47,49 @@
                     <view key="view" contentMode="scaleToFill" id="rDr-Ak-xa8">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npf-dS-hV2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5sk-N5-C81"/>
+                                    <constraint firstAttribute="width" constant="244" id="ucv-NN-sRx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-SH-6db">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="55q-4Y-h0d"/>
+                                    <constraint firstAttribute="width" constant="248" id="KB5-qO-SPE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-ga-VSv">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Q30-Nn-mK3"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7GF-ga-VSv" firstAttribute="trailing" secondItem="rDr-Ak-xa8" secondAttribute="trailing" type="default" id="3bb-Iv-NWh"/>
+                            <constraint firstAttribute="bottom" secondItem="npf-dS-hV2" secondAttribute="bottom" constant="83" id="6On-id-cLG"/>
+                            <constraint firstAttribute="bottom" secondItem="3mM-SH-6db" secondAttribute="bottom" constant="41" id="EXf-Dd-RHf"/>
+                            <constraint firstItem="7GF-ga-VSv" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" type="default" id="IYh-wa-7wU"/>
+                            <constraint firstItem="npf-dS-hV2" firstAttribute="centerX" secondItem="7GF-ga-VSv" secondAttribute="centerX" type="default" id="J1p-cE-sxg"/>
+                            <constraint firstItem="3mM-SH-6db" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" constant="32" id="MXc-Gu-Iag"/>
+                            <constraint firstItem="7GF-ga-VSv" firstAttribute="top" secondItem="rDr-Ak-xa8" secondAttribute="top" type="default" id="Ynu-C0-fdw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Bt-dD-Yda"/>
+                    <connections>
+                        <outlet property="ponyNameLabel" destination="npf-dS-hV2" id="x1l-cL-j7A"/>
+                        <outlet property="ponyPic" destination="7GF-ga-VSv" id="6aJ-Q2-yad"/>
+                        <outlet property="ponyTags" destination="3mM-SH-6db" id="61D-gY-rt9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqy-Uf-LKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,11 +179,17 @@
     <classes>
         <class className="DetailsPonyViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsPonyViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ponyNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ponyPic" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="ponyTags" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="FirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="thumb" candidateClass="UIImage"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

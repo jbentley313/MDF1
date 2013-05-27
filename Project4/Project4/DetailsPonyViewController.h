@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pony.h"
 
 @interface DetailsPonyViewController : UIViewController
+
+
+@property(weak)IBOutlet UILabel *ponyNameLabel;
+@property(weak)IBOutlet UITextView *ponyTags;
+@property IBOutlet UIWebView *ponyPic;
+
+@property(strong) Pony *ponyObject;
 
 @end

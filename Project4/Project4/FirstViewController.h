@@ -19,7 +19,7 @@
    
     NSMutableArray *objects;
     NSMutableString *currentXMLValue;
-    
+    IBOutlet UIImage *thumb;
     
 }
 

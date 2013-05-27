@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "Pony.h"
+#import "DetailsPonyViewController.h"
 
 
 @interface FirstViewController ()
@@ -19,46 +20,12 @@
 
 
 
-
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
-{
-    if (data != nil)
-    {
-        [requestData appendData:data];
-    }
-    
-}
-
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection;
-{
-    NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
-    if (requestString != nil) {
-        NSLog(@"%@", requestString);
-    }
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    if (documentsDirectory !=nil) {
-        NSString *fullPath = [[NSString alloc]initWithFormat:@"%@/%@", documentsDirectory, @"index.xml"];
-        if (fullPath != nil) {
-            [requestData writeToFile:fullPath atomically:YES];
-            //            NSLog(@"%@", fullPath);
-        }
-    }
-    
-    
-    
-}
-
-
 - (void)viewDidLoad
 {
-
+    //set our URL
     url = [[NSURL alloc] initWithString:@"http://ponyfac.es/api/tag/rainbow&dash&out=xml"];
     
+    //request URL
     request = [[NSURLRequest alloc] initWithURL:url];
     
     if (request != nil) {
@@ -69,8 +36,7 @@
         requestData = [NSMutableData data];
     }
     
-    
-    
+    //store our XML in NSData
     NSData *xmlData = [self GetFileDataFromFile:@"index.xml"];
     
     //parse
@@ -81,11 +47,44 @@
         [parser parse];
     }
     
-    
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+//URL connection
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
+{
+    if (data != nil)
+    {
+        //append data to requestData
+        [requestData appendData:data];
+    }
+    
+}
+
+//after connection loads set dir path
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection;
+{
+    NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
+    if (requestString != nil) {
+        NSLog(@"%@", requestString);
+    }
+    
+    //search for directory path
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    //save path to string
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    if (documentsDirectory !=nil) {
+        NSString *fullPath = [[NSString alloc]initWithFormat:@"%@/%@", documentsDirectory, @"index.xml"];
+        if (fullPath != nil) {
+            [requestData writeToFile:fullPath atomically:YES];
+        }
+    }
+}
+
+
 
 //get data from file
 -(NSData*)GetFileDataFromFile:(NSString*)filename;
@@ -103,6 +102,7 @@
     
     //does filename path exist?
     if ([fileManager fileExistsAtPath:filePath]) {
+        
         //returns nsdata from file
         return [NSData  dataWithContentsOfFile:filePath];
         
@@ -153,13 +153,6 @@
 
 
 
-
-
-
-
-
-
-
 //count items in array
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -181,10 +174,33 @@
     //set cell text
     cell.textLabel.text = passed.name;
     
+    
+    //set cell thumb pics
+    NSURL * imageURL = [NSURL URLWithString:passed.thumbPicUrl];
+    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+    UIImage * image = [UIImage imageWithData:imageData];
+    
+    cell.imageView.image = image;
+    
     return cell;
 }
 
 
+//segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PonyDetails"]) {
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        Pony *ponySelected = [objects objectAtIndex:indexPath.row];
+        
+         DetailsPonyViewController *ponyDetails = (DetailsPonyViewController *)segue.destinationViewController;
+        
+        ponyDetails.ponyObject = ponySelected;
+        
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
