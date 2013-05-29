@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB0A860A1753FADA00B8418C /* DetailsPonyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */; };
+		BB72A60B17557BFD006E72CF /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB72A60A17557BFD006E72CF /* DataManager.m */; };
 		BB9F81E71752E7BE00350DA7 /* Pony.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F81E61752E7BE00350DA7 /* Pony.m */; };
 		BBF53DC51751A1E40090C329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF53DC41751A1E40090C329 /* UIKit.framework */; };
 		BBF53DC71751A1E40090C329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF53DC61751A1E40090C329 /* Foundation.framework */; };
@@ -23,7 +24,7 @@
 		BBF53DE41751A1E50090C329 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF53DE31751A1E50090C329 /* FirstViewController.m */; };
 		BBF53DE61751A1E50090C329 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BBF53DE51751A1E50090C329 /* first.png */; };
 		BBF53DE81751A1E50090C329 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBF53DE71751A1E50090C329 /* first@2x.png */; };
-		BBF53DEB1751A1E50090C329 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF53DEA1751A1E50090C329 /* SecondViewController.m */; };
+		BBF53DEB1751A1E50090C329 /* XMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF53DEA1751A1E50090C329 /* XMLViewController.m */; };
 		BBF53DED1751A1E50090C329 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BBF53DEC1751A1E50090C329 /* second.png */; };
 		BBF53DEF1751A1E50090C329 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBF53DEE1751A1E50090C329 /* second@2x.png */; };
 /* End PBXBuildFile section */
@@ -31,9 +32,11 @@
 /* Begin PBXFileReference section */
 		BB0A86081753FADA00B8418C /* DetailsPonyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsPonyViewController.h; sourceTree = "<group>"; };
 		BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsPonyViewController.m; sourceTree = "<group>"; };
+		BB72A60917557BFD006E72CF /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		BB72A60A17557BFD006E72CF /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		BB9F81E51752E7BE00350DA7 /* Pony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pony.h; sourceTree = "<group>"; };
 		BB9F81E61752E7BE00350DA7 /* Pony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pony.m; sourceTree = "<group>"; };
-		BBF53DC11751A1E40090C329 /* Project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF53DC11751A1E40090C329 /* My Little Pony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Little Pony.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF53DC41751A1E40090C329 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBF53DC61751A1E40090C329 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBF53DC81751A1E40090C329 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +55,8 @@
 		BBF53DE31751A1E50090C329 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BBF53DE51751A1E50090C329 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BBF53DE71751A1E50090C329 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BBF53DE91751A1E50090C329 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BBF53DEA1751A1E50090C329 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BBF53DE91751A1E50090C329 /* XMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLViewController.h; sourceTree = "<group>"; };
+		BBF53DEA1751A1E50090C329 /* XMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLViewController.m; sourceTree = "<group>"; };
 		BBF53DEC1751A1E50090C329 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BBF53DEE1751A1E50090C329 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +87,7 @@
 		BBF53DC21751A1E40090C329 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBF53DC11751A1E40090C329 /* Project4.app */,
+				BBF53DC11751A1E40090C329 /* My Little Pony.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,8 +113,8 @@
 				BBF53DE31751A1E50090C329 /* FirstViewController.m */,
 				BBF53DE51751A1E50090C329 /* first.png */,
 				BBF53DE71751A1E50090C329 /* first@2x.png */,
-				BBF53DE91751A1E50090C329 /* SecondViewController.h */,
-				BBF53DEA1751A1E50090C329 /* SecondViewController.m */,
+				BBF53DE91751A1E50090C329 /* XMLViewController.h */,
+				BBF53DEA1751A1E50090C329 /* XMLViewController.m */,
 				BBF53DEC1751A1E50090C329 /* second.png */,
 				BBF53DEE1751A1E50090C329 /* second@2x.png */,
 				BBF53DCB1751A1E40090C329 /* Supporting Files */,
@@ -119,6 +122,8 @@
 				BB9F81E61752E7BE00350DA7 /* Pony.m */,
 				BB0A86081753FADA00B8418C /* DetailsPonyViewController.h */,
 				BB0A86091753FADA00B8418C /* DetailsPonyViewController.m */,
+				BB72A60917557BFD006E72CF /* DataManager.h */,
+				BB72A60A17557BFD006E72CF /* DataManager.m */,
 			);
 			path = Project4;
 			sourceTree = "<group>";
@@ -140,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBF53DC01751A1E40090C329 /* Project4 */ = {
+		BBF53DC01751A1E40090C329 /* My Little Pony */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBF53DF21751A1E50090C329 /* Build configuration list for PBXNativeTarget "Project4" */;
+			buildConfigurationList = BBF53DF21751A1E50090C329 /* Build configuration list for PBXNativeTarget "My Little Pony" */;
 			buildPhases = (
 				BBF53DBD1751A1E40090C329 /* Sources */,
 				BBF53DBE1751A1E40090C329 /* Frameworks */,
@@ -152,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = Project4;
+			name = "My Little Pony";
 			productName = Project4;
-			productReference = BBF53DC11751A1E40090C329 /* Project4.app */;
+			productReference = BBF53DC11751A1E40090C329 /* My Little Pony.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBF53DC01751A1E40090C329 /* Project4 */,
+				BBF53DC01751A1E40090C329 /* My Little Pony */,
 			);
 		};
 /* End PBXProject section */
@@ -211,9 +216,10 @@
 				BBF53DD11751A1E40090C329 /* main.m in Sources */,
 				BBF53DD51751A1E40090C329 /* AppDelegate.m in Sources */,
 				BBF53DE41751A1E50090C329 /* FirstViewController.m in Sources */,
-				BBF53DEB1751A1E50090C329 /* SecondViewController.m in Sources */,
+				BBF53DEB1751A1E50090C329 /* XMLViewController.m in Sources */,
 				BB9F81E71752E7BE00350DA7 /* Pony.m in Sources */,
 				BB0A860A1753FADA00B8418C /* DetailsPonyViewController.m in Sources */,
+				BB72A60B17557BFD006E72CF /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBF53DF21751A1E50090C329 /* Build configuration list for PBXNativeTarget "Project4" */ = {
+		BBF53DF21751A1E50090C329 /* Build configuration list for PBXNativeTarget "My Little Pony" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBF53DF31751A1E50090C329 /* Debug */,

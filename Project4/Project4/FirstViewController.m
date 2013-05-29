@@ -9,6 +9,8 @@
 #import "FirstViewController.h"
 #import "Pony.h"
 #import "DetailsPonyViewController.h"
+#import "XMLViewController.h"
+#import "DataManager.h"
 
 
 @interface FirstViewController ()
@@ -16,12 +18,16 @@
 @end
 
 @implementation FirstViewController
-@synthesize objects, currentXMLValue, obj;
+@synthesize objects, currentXMLValue, obj, requestStringtoPass;
 
 
 
 - (void)viewDidLoad
 {
+    //instantiate singleton
+    [DataManager initialize];
+    
+    
     //set our URL
     url = [[NSURL alloc] initWithString:@"http://ponyfac.es/api/tag/rainbow&dash&out=xml"];
     
@@ -34,10 +40,12 @@
         
         //create mutabledata object
         requestData = [NSMutableData data];
+          
     }
     
     //store our XML in NSData
     NSData *xmlData = [self GetFileDataFromFile:@"index.xml"];
+  
     
     //parse
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
@@ -46,7 +54,7 @@
         [parser setDelegate:self];
         [parser parse];
     }
-    
+    NSLog(@"%@", self.objects);
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -59,6 +67,7 @@
     {
         //append data to requestData
         [requestData appendData:data];
+        
     }
     
 }
@@ -69,12 +78,14 @@
     NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
     if (requestString != nil) {
         NSLog(@"%@", requestString);
+        [self setRequestStringtoPass:requestString];
+        [[DataManager GetInstance] printSettings:requestStringtoPass];
     }
     
     //search for directory path
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
-    //save path to string
+    //save path to string and write to file
     NSString *documentsDirectory = [paths objectAtIndex:0];
     if (documentsDirectory !=nil) {
         NSString *fullPath = [[NSString alloc]initWithFormat:@"%@/%@", documentsDirectory, @"index.xml"];
@@ -116,7 +127,6 @@
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string;
 {
     [self.currentXMLValue appendString:string];
-    
 }
 
 
@@ -157,8 +167,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.objects count];
-    int counted = [self.objects count];
-    NSLog(@"dfasdfasdfasd%d", counted);
 }
 
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Pony.h"
+#import "DataManager.h"
 
 @interface FirstViewController : UITableViewController <UITableViewDelegate , NSURLConnectionDelegate, NSXMLParserDelegate>
 {
@@ -16,14 +17,19 @@
     NSURL *url;
     NSURLConnection *connection;
     NSMutableData *requestData;
+    NSString *passThisXML;
    
     NSMutableArray *objects;
     NSMutableString *currentXMLValue;
-    IBOutlet UIImage *thumb;
+//    IBOutlet UIImage *thumb;
     
 }
 
 @property NSMutableArray *objects;
 @property NSMutableString *currentXMLValue;
 @property(strong) Pony *obj;
+@property NSString *requestStringtoPass;
+
+
+
 @end
