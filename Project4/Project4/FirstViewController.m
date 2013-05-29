@@ -188,7 +188,9 @@
     NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
     UIImage * image = [UIImage imageWithData:imageData];
     
-    cell.imageView.image = image;
+    thumb.image = image;
+    
+//    [cell.imageView setImage:
     
     return cell;
 }
