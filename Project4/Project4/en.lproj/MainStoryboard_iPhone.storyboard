@@ -31,16 +31,16 @@
                             <outlet property="delegate" destination="2" id="PQJ-QD-qrj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7q4-ov-jZG"/>
+                    <navigationItem key="navigationItem" title="Ponies" id="7q4-ov-jZG"/>
                     <connections>
                         <outlet property="tableView" destination="ftF-SE-Ecc" id="ZCS-oW-WPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-138"/>
+            <point key="canvasLocation" x="1047" y="-56"/>
         </scene>
-        <!--Details Pony View Controller-->
+        <!--Details Pony View Controller - Pony Viewer-->
         <scene sceneID="6AR-Py-JZB">
             <objects>
                 <viewController id="Eoh-2V-yel" customClass="DetailsPonyViewController" sceneMemberID="viewController">
@@ -54,37 +54,57 @@
                                     <constraint firstAttribute="width" constant="244" id="ucv-NN-sRx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-SH-6db">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="55q-4Y-h0d"/>
-                                    <constraint firstAttribute="width" constant="248" id="KB5-qO-SPE"/>
+                                    <constraint firstAttribute="height" constant="46" id="y89-wX-28Y"/>
+                                    <constraint firstAttribute="width" constant="199" id="ypC-b5-Ilo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-ga-VSv">
+                            <webView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-ga-VSv">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="Q30-Nn-mK3"/>
+                                    <constraint firstAttribute="height" constant="262" id="b9d-0L-tyP"/>
+                                    <constraint firstAttribute="width" constant="273" id="kaH-zX-Ts2"/>
                                 </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Filename:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POl-Rd-EaS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="7wq-Dn-aVv"/>
+                                    <constraint firstAttribute="width" constant="84" id="xum-sy-pX5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tags:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVq-PN-gGQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="7GF-ga-VSv" firstAttribute="trailing" secondItem="rDr-Ak-xa8" secondAttribute="trailing" type="default" id="3bb-Iv-NWh"/>
-                            <constraint firstAttribute="bottom" secondItem="npf-dS-hV2" secondAttribute="bottom" constant="83" id="6On-id-cLG"/>
-                            <constraint firstAttribute="bottom" secondItem="3mM-SH-6db" secondAttribute="bottom" constant="41" id="EXf-Dd-RHf"/>
-                            <constraint firstItem="7GF-ga-VSv" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" type="default" id="IYh-wa-7wU"/>
-                            <constraint firstItem="npf-dS-hV2" firstAttribute="centerX" secondItem="7GF-ga-VSv" secondAttribute="centerX" type="default" id="J1p-cE-sxg"/>
-                            <constraint firstItem="3mM-SH-6db" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" constant="32" id="MXc-Gu-Iag"/>
-                            <constraint firstItem="7GF-ga-VSv" firstAttribute="top" secondItem="rDr-Ak-xa8" secondAttribute="top" type="default" id="Ynu-C0-fdw"/>
+                            <constraint firstItem="npf-dS-hV2" firstAttribute="top" secondItem="rDr-Ak-xa8" secondAttribute="top" constant="305" id="1ot-VW-pgU"/>
+                            <constraint firstItem="3mM-SH-6db" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" constant="84" id="5vY-c6-uT3"/>
+                            <constraint firstItem="POl-Rd-EaS" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" constant="32" id="MDp-yo-Kb0"/>
+                            <constraint firstItem="7GF-ga-VSv" firstAttribute="top" secondItem="rDr-Ak-xa8" secondAttribute="top" constant="20" symbolic="YES" type="default" id="NVm-zc-Uye"/>
+                            <constraint firstAttribute="bottom" secondItem="POl-Rd-EaS" secondAttribute="bottom" constant="109" id="Pea-vX-cm9"/>
+                            <constraint firstItem="gVq-PN-gGQ" firstAttribute="trailing" secondItem="POl-Rd-EaS" secondAttribute="trailing" type="default" id="S3H-NA-5in"/>
+                            <constraint firstItem="gVq-PN-gGQ" firstAttribute="leading" secondItem="POl-Rd-EaS" secondAttribute="leading" type="default" id="UE0-kM-b1q"/>
+                            <constraint firstAttribute="bottom" secondItem="3mM-SH-6db" secondAttribute="bottom" constant="56" id="WAU-Nc-HtN"/>
+                            <constraint firstItem="7GF-ga-VSv" firstAttribute="centerX" secondItem="rDr-Ak-xa8" secondAttribute="centerX" type="default" id="fBe-EX-GcS"/>
+                            <constraint firstAttribute="bottom" secondItem="gVq-PN-gGQ" secondAttribute="bottom" constant="75" id="sbe-h3-TX3"/>
+                            <constraint firstItem="npf-dS-hV2" firstAttribute="leading" secondItem="rDr-Ak-xa8" secondAttribute="leading" constant="117" id="y3D-KK-WR0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4Bt-dD-Yda"/>
+                    <navigationItem key="navigationItem" title="Pony Viewer" id="4Bt-dD-Yda"/>
                     <connections>
                         <outlet property="ponyNameLabel" destination="npf-dS-hV2" id="x1l-cL-j7A"/>
                         <outlet property="ponyPic" destination="7GF-ga-VSv" id="6aJ-Q2-yad"/>
@@ -93,19 +113,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqy-Uf-LKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="-138"/>
+            <point key="canvasLocation" x="1619" y="-66"/>
         </scene>
         <!--View Controller - Second-->
         <scene sceneID="13">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
                 <viewController title="Second" id="3" customClass="XMLViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kF2-eM-rGt">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-4h-gEX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-4h-gEX">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="306" id="5yu-Rv-IWF"/>
                                     <constraint firstAttribute="height" constant="463" id="tzq-qE-Zk4"/>
@@ -137,8 +159,9 @@
                         <outlet property="xmlRawView" destination="7Ye-4h-gEX" id="DAV-WO-kOu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="587"/>
+            <point key="canvasLocation" x="1003" y="733"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -157,7 +180,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-299" y="144"/>
+            <point key="canvasLocation" x="-11" y="220"/>
         </scene>
         <!--Navigation Controller - Ponys-->
         <scene sceneID="1li-Jw-5Gf">
@@ -168,6 +191,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QSN-UR-KVo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -176,13 +200,39 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uO9-Rb-tDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="563" y="-56"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="DetailsPonyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsPonyViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ponyNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ponyPic" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="ponyTags" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="FirstViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="thumb" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="XMLViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/XMLViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="xmlRawView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

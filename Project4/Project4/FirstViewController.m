@@ -29,7 +29,7 @@
     
     
     //set our URL
-    url = [[NSURL alloc] initWithString:@"http://ponyfac.es/api/tag/rainbow&dash&out=xml"];
+    url = [[NSURL alloc] initWithString:@"http://ponyfac.es/api/tag/pinkie&pie&out=xml"];
     
     //request URL
     request = [[NSURLRequest alloc] initWithURL:url];
@@ -180,17 +180,15 @@
     Pony *passed = [objects objectAtIndex:indexPath.row];
     
     //set cell text
-    cell.textLabel.text = passed.name;
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"Filename: %@", passed.name];
+   
     
     //set cell thumb pics
     NSURL * imageURL = [NSURL URLWithString:passed.thumbPicUrl];
     NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
     UIImage * image = [UIImage imageWithData:imageData];
     
-    thumb.image = image;
-    
-//    [cell.imageView setImage:
+    cell.imageView.image = image;
     
     return cell;
 }
